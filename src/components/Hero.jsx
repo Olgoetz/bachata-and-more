@@ -17,7 +17,7 @@ const Hero = () => {
 				/>
 			</video>
 			{/* <div className='absolute w-full h-screen top-0 left-0 bg-gray-900/30'></div> */}
-			<div className='absolute top-0 w-full h-[50%] md:h-screen flex flex-col justify-center text-center text-white'>
+			<div className='absolute top-0 w-full h-[60%] md:h-screen flex flex-col justify-center text-center text-white'>
 				<div>
 					<h2 className='md:text-5xl text-3xl font-bold text-orange-400'>
 						Bachata&More.
