@@ -11,8 +11,8 @@ const Footer = () => {
 	}, []);
 
 	return (
-		<div className='w-full bg-black py-10 px-4'>
-			<div className='max-w-[1024px] mx-auto grid grid-cols-2 md:gap-x-3'>
+		<div className='w-full bg-black px-5 py-5'>
+			<div className='max-w-[1024px] mx-auto grid md:grid-cols-2 md:gap-x-3'>
 				<div className='flex flex-col'>
 					<h1 className='text-3xl font-bold text-orange-400'>Bachata&More.</h1>
 					<div className='pl-4 text-white'>
@@ -20,11 +20,11 @@ const Footer = () => {
 						<p>Disclaimer</p>
 					</div>
 				</div>
-				<div className='flex flex-col justify-center'>
+				<div className='flex flex-col my-5 w-[50%] md:w-full mx-auto justify-center'>
 					<DownloadConceptButton />
 				</div>
 			</div>
-			<div className='flex justify-center mt-4 text-sm text-white'>
+			<div className='flex justify-center text-sm text-white'>
 				<BiCopyright size={20} className='mr-1' />
 				<p>2022 - {currentDate} Michaela Süßbauer & Oliver Götz</p>
 			</div>
