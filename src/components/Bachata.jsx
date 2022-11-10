@@ -41,19 +41,19 @@ const Bachata = () => {
 				<div className='max-w-[1024px] mx-auto grid md:grid-cols-3 gap-y-3 md:gap-x-3'>
 					<div>
 						<h5 className='font-bold text-orange-400'>ROBINSON Camyuva</h5>
-						<Player className='py-5 my-5'>
+						<Player className='py-2 md:py-5 my-5'>
 							<source src='https://bachata-and-more.s3.eu-central-1.amazonaws.com/videos/robinsoncamyuva-bachatasensual-michiyoli-1.MOV' />
 						</Player>
 					</div>
 					<div>
 						<h5 className='font-bold text-orange-400'>ROBINSON SomaBay</h5>
-						<Player className='py-5 my-5'>
+						<Player className='py-2 md:py-5 my-5'>
 							<source src='https://bachata-and-more.s3.eu-central-1.amazonaws.com/videos/robinsonsomabay-bachatasensual-michiyoli-3.MOV' />
 						</Player>
 					</div>
 					<div>
 						<h5 className='font-bold text-orange-400'>ROBINSON Camyuva</h5>
-						<Player className='py-5 my-5'>
+						<Player className='py-2 md:py-5 my-5'>
 							<source src='https://bachata-and-more.s3.eu-central-1.amazonaws.com/videos/robinsoncamyuva-bachatasensual-michiyoli-3.MOV' />
 						</Player>
 					</div>

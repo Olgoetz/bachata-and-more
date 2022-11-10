@@ -22,21 +22,21 @@ const Contact = () => {
 				</div>
 
 				<form className='w-full flex mx-auto flex-col gap-3 flex-wrap items-center'>
-					<div className='w-[400px] flex flex-col'>
+					<div className='w-full flex flex-col'>
 						<label className='uppercase font-bold text-white'>Name</label>
-						<input className='w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline' />
+						<input className='bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline' />
 					</div>
-					<div className='w-[400px] flex flex-col'>
+					<div className='w-full flex flex-col'>
 						<label className='uppercase font-bold text-white'>Vorname</label>
-						<input className='w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline' />
+						<input className='bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline' />
 					</div>
-					<div className='w-[400px] flex flex-col'>
+					<div className='w-full flex flex-col'>
 						<label className='uppercase font-bold text-white'>
 							Email-Adresse
 						</label>
-						<input className='w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline' />
+						<input className='bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline' />
 					</div>
-					<div className='w-[400px] flex flex-col'>
+					<div className='w-full flex flex-col'>
 						<label className='uppercase font-bold text-white'>Nachricht</label>
 						<textarea
 							maxLength='500'

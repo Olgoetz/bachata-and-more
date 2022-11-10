@@ -20,7 +20,7 @@ const Footer = () => {
 						<p>Disclaimer</p>
 					</div>
 				</div>
-				<div className='flex flex-col'>
+				<div className='flex flex-col justify-center'>
 					<DownloadConceptButton />
 				</div>
 			</div>
