@@ -17,7 +17,7 @@ const Hero = () => {
 				/>
 			</video>
 			{/* <div className='absolute w-full h-screen top-0 left-0 bg-gray-900/30'></div> */}
-			<div className='absolute top-0 w-full h-full flex flex-col justify-top text-center text-white'>
+			{/* <div className='absolute top-0 w-full h-full flex flex-col justify-top text-center text-white'>
 				<div>
 					<h2 className='md:text-5xl text-3xl font-bold text-orange-400'>
 						Bachata&More.
@@ -37,7 +37,7 @@ const Hero = () => {
 						<DownloadConceptButton />
 					</div>
 				</div>
-			</div>
+			</div> */}
 			{/* <img
 				alt='bachata_michi&oli'
 				className='max-lg:hidden w-full h-full object-cover'
