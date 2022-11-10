@@ -4,7 +4,13 @@ import DownloadConceptButton from './DownloadConceptButton';
 const Hero = () => {
 	return (
 		<div className='w-full h-screen'>
-			<video className='w-full h-screen object-cover' autoPlay loop muted>
+			<video
+				className='w-full h-screen object-cover'
+				autoplay
+				loop
+				muted
+				playsinline
+			>
 				<source
 					src={require('../../public/videos/hero_teaser.mp4')}
 					type='video/mp4'
