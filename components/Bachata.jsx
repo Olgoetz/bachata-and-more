@@ -19,9 +19,9 @@ const Bachata = () => {
 							Nichts ist derzeit mehr im Trend als Bachata. Bachata stammt
 							ursprünglich aus der Dominikanischen Republik und hat mittlerweile
 							eine sehr große Community in Europa. Es gibt verschiedene Formen
-							des Bachatas. Wir fokussieren uns auf den Stil &quotBachata
-							Sensual&quot. Dieser ist geprägt von tendenziell langsamerer Musik
-							und somit einfach zu Erlernen. Sinnlichkeit und Figuren wie
+							des Bachatas. Wir fokussieren uns auf den Stil &quot;Bachata
+							Sensual&quot;. Dieser ist geprägt von tendenziell langsamerer
+							Musik und somit einfach zu Erlernen. Sinnlichkeit und Figuren wie
 							Bodywaves oder Headrolls sind charakteristisch und betonen die
 							Körperlichkeit von Mann und Frau. Wir möchten unsere
 							Leidenschaften an andere weitergeben. Wir bieten Bachatakurse
