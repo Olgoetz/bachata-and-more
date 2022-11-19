@@ -4,7 +4,7 @@ const Hero = () => {
 	return (
 		<div id='home' className='w-full'>
 			{/* <div className='absolute w-full h-screen top-0 left-0 bg-gray-900/30'></div> */}
-			<div className='flex space-x-3 h-screen items-center justify-center text-center text-white bg-fixed bg-center md:bg-cover bg-[url(../public/images/MichiyOli_parallax.jpg)]'>
+			<div className='flex space-x-3 h-screen items-center justify-center text-center text-white bg-center bg-cover bg-[url(../public/images/MichiyOli_parallax.jpg)]'>
 				<div className='max-w-[400px] mx-auto bg-gray-900/50 p-4 '>
 					<p className='md:text-3xl text-xl'>Eine Kursangebot aus </p>
 					<Typed
