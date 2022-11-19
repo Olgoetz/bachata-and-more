@@ -1,10 +1,19 @@
 import { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import { useRouter } from 'next/router';
 //import { Link } from 'react-scroll';
 import Link from 'next/link';
 const Navbar = () => {
 	const [nav, setNav] = useState(false);
 	const [shadow, setShadow] = useState(false);
+	const [navBgColor, setNavBgColor] = useState('bg-white');
+
+	const router = useRouter();
+	useEffect(() => {
+		useEffect.asPath == '/impressum'
+			? setNavBgColor('bg-black')
+			: setNavBgColor('bg-white');
+	}, [router]);
 
 	useEffect(() => {
 		const handleShadow = () => {
@@ -21,10 +30,11 @@ const Navbar = () => {
 	};
 	return (
 		<div
+			//style={{ 'background-color': `${navBgColor}` }}
 			className={
 				shadow
 					? 'fixed w-full h-20 shadow-xl z-[100] bg-white ease-in-out duration-300 px-2'
-					: 'fixed w-full px-2 h-20 z-[100] md:text-white'
+					: 'fixed w-full px-2 h-20 z-[100] bg-black md:text-white'
 			}
 			//className='absolute w-full h-20 shadow-xl z-[100] bg-white ease-in-out duration-300 px-5'
 		>
