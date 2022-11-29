@@ -6,8 +6,9 @@ const nextConfig = {
 	},
 };
 
-module.exports = nextConfig;
+import withVideos from 'next-videos';
 
-const withVideos = require('next-videos');
-
-module.exports = withVideos();
+export default {
+	nextConfig,
+	withVideos: withVideos(),
+};
