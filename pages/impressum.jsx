@@ -1,7 +1,7 @@
 const Impressum = () => {
 	return (
 		<div className='w-full bg-white py-16 px-4'>
-			<div className='max-w-[1024px] mx-auto'>
+			<div className='max-w-[1024px] py-8 mx-auto'>
 				<p
 					name='impressum'
 					className='mt-4 text-xl uppercase font-bold text-orange-400'
@@ -14,12 +14,12 @@ const Impressum = () => {
 					<p>Michaela Süßbauer</p>
 					<p>Max-Bill-Str. 6, D-80807 München</p>
 					<p>Tel. 0151 / 23 00 50 78</p>
-					<p>michaela@bachata-and-more.de</p>
+					<p>michi@bachata-and-more.de</p>
 					<br />
 					<p>Oliver Götz</p>
 					<p>Luxemburger Str. 192, D-50937 Köln</p>
 					<p>Tel. 0176 / 31 73 77 82</p>
-					<p>oliver@bachata-and-more.de</p>
+					<p>oli@bachata-and-more.de</p>
 					<br />
 					<p>
 						<strong>Haftungsausschluss</strong>
