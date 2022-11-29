@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build-next-js:
+  build:
 
     runs-on: ubuntu-latest
 
@@ -19,18 +19,12 @@ jobs:
           node-version: '18.x'
       
       - name: Install dependencies
-        run: npm install
+        run: npm install --save
 
       - name: Build app and export static html
         run: npm run build --if-present
 
-
-  deploy-website:
-
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: 📂 Sync files
+      - name: 📂 Upload files
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
         with:
           server: ae8be.netcup.net
