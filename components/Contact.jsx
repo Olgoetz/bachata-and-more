@@ -1,8 +1,8 @@
 import { useForm } from 'react-hook-form';
-import ContactImg from '../public/images/MichiyOli_contact.jpg';
+import ContactImg from '../public/images/MichiyOli_contact.webp';
 import Image from 'next/image';
 import emailjs from '@emailjs/browser';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 const Contact = () => {
 	// const [inputs, setInputs] = useState({
 	// 	lastname: '',
@@ -29,7 +29,15 @@ const Contact = () => {
 		formState: { errors },
 	} = useForm();
 
-	console.log('erros', errors);
+	// useEffect(() => {
+	// 	reset();
+	// 	setTimeout(setSubmitStatus({ message: '', status: 0 }), 5000);
+	// }, []);
+	const cleanUp = async () => {
+		reset();
+		setTimeout(() => setSubmitStatus({ message: '', status: 0 }), 5000);
+	};
+	console.log(errors);
 	const onSubmit = async (data) => {
 		console.log(data);
 		try {
@@ -39,14 +47,12 @@ const Contact = () => {
 				data,
 				'WIQpvQ2eC1E8tBmhX'
 			);
-			console.log(result);
 			setSubmitStatus({ status: result.status, message: result.text });
-			reset();
-			setTimeout(setSubmitStatus({ status: 0 }), 5000);
 		} catch (error) {
 			console.log(error.text);
 			setSubmitStatus({ status: error.status, message: error.text });
 		}
+		await cleanUp();
 	};
 	return (
 		<div id='contact' className='w-full bg-black py-16 px-4'>
@@ -158,10 +164,17 @@ const Contact = () => {
 						>
 							Abschicken
 						</button>
-						{submitStatus.status === 200 ? (
-							<p className='text-white'>Success</p>
-						) : (
-							''
+						{submitStatus.status === 200 && (
+							<div className='w-full mt-1 flex flex-col items-center'>
+								<p className='text-green-600 '>Nachricht gesendet!</p>
+							</div>
+						)}
+						{Object.keys(errors).length !== 0 && (
+							<div className='w-full mt-1 flex flex-col items-center'>
+								<p className='text-red-500 '>
+									Versenden fehlgeschlagen. Versuche es später nochmal!
+								</p>
+							</div>
 						)}
 					</form>
 				</div>
