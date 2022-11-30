@@ -21,7 +21,7 @@ const Footer = () => {
 							Bachata&More.
 						</h1>
 						<ul className='flex flex-col gap-1 mt-2 text-white text-[12px]'>
-							<li className='flex items-center'>
+							{/* <li className='flex items-center'>
 								<HiOutlineMail size={20} className='mr-1' />
 								<a href='mailto:michi@bachata-and-more.de'>
 									Persönlich: michi@bachata-and-more.de
@@ -38,11 +38,11 @@ const Footer = () => {
 								<a href='mailto:booking@bachata-and-more.de'>
 									Buchung: booking@bachata-and-more.de
 								</a>
-							</li>
+							</li> */}
 							<li className='flex items-center'>
 								<HiOutlineMail size={20} className='mr-1' />
 								<a href='mailto:info@bachata-and-more.de'>
-									Allgemein: info@bachata-and-more.de
+									info@bachata-and-more.de
 								</a>
 							</li>
 						</ul>
