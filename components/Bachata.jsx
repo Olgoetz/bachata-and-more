@@ -1,4 +1,4 @@
-import MichiYOli from '../public/images/MichiyOli_hero.jpg';
+import MichiYOli from '../public/images/MichiyOli_bachata.webp';
 import React from 'react';
 import { Player } from 'video-react';
 import Image from 'next/image';
@@ -23,10 +23,10 @@ const Bachata = () => {
 							Sensual&quot;. Dieser ist geprägt von tendenziell langsamerer
 							Musik und somit einfach zu Erlernen. Sinnlichkeit und Figuren wie
 							Bodywaves oder Headrolls sind charakteristisch und betonen die
-							Körperlichkeit von Mann und Frau. Wir möchten unsere
-							Leidenschaften an andere weitergeben. Wir bieten Bachatakurse
-							inklusive täglicher Übungungsabende sowie einen fulminanten
-							3-stündigen Abschlussabend an.
+							Körperlichkeit von Mann und Frau. Wir möchten unsere Leidenschaft
+							an euch weitergeben. Wir bieten Bachatakurse inklusive täglicher
+							Übungungsabende sowie einen fulminanten 3-stündigen Abschlussabend
+							an.
 						</p>
 					</div>
 					<div className='flex flex-col justify-center'>

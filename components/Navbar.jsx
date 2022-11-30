@@ -10,7 +10,7 @@ const Navbar = () => {
 
 	const router = useRouter();
 	useEffect(() => {
-		useEffect.asPath == '/impressum'
+		useRouter.asPath == '/impressum'
 			? setNavBgColor('bg-black')
 			: setNavBgColor('bg-white');
 	}, [router]);
@@ -39,9 +39,11 @@ const Navbar = () => {
 			//className='absolute w-full h-20 shadow-xl z-[100] bg-white ease-in-out duration-300 px-5'
 		>
 			<div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-				<h1 className='block text-3xl font-bold text-orange-400'>
-					Bachata&More.
-				</h1>
+				<Link href='/'>
+					<h1 className='block text-3xl font-bold text-orange-400'>
+						Bachata&More.
+					</h1>
+				</Link>
 				<div>
 					<ul className='uppercase hidden md:flex'>
 						<li className='ml-10 text-sm hover:border-b'>

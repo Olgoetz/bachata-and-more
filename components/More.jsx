@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import Workout from '../public/images/gewichtheben.png';
-import Dance from '../public/images/partymenschen.png';
-import BodyMind from '../public/images/yoga.png';
+import Workout from '../public/images/gewichtheben.webp';
+import Dance from '../public/images/partymenschen.webp';
+import BodyMind from '../public/images/yoga.webp';
 const More = () => {
 	return (
 		<div id='more' className='w-full bg-white py-16 px-4'>
@@ -41,7 +41,7 @@ const More = () => {
 						<div className='text-center font-medium'>
 							<p className='py-2 border-b mx-8'>Yoga Flow</p>
 							<p className='py-2 border-b mx-8'>Sinnvoller Aufbau der Asanas</p>
-							<p className='py-2 mx-8'>Mobility- und Bewegelichkeitstraining</p>
+							<p className='py-2 mx-8'>Mobility- und Beweglichkeitstraining</p>
 						</div>
 					</div>
 				</div>

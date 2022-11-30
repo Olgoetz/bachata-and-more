@@ -1,4 +1,4 @@
-import AboutsUsImg from '../public/images/MichiyOli_aboutus.jpg';
+import AboutsUsImg from '../public/images/MichiyOli_aboutus.webp';
 import Image from 'next/image';
 const AboutUs = () => {
 	return (
