@@ -40,19 +40,28 @@ const Bachata = () => {
 					<div>
 						<h5 className='font-bold text-orange-400'>ROBINSON Camyuva</h5>
 						<Player className='py-2 md:py-5 my-5'>
-							<source src='https://bachata-and-more.s3.eu-central-1.amazonaws.com/videos/robinsoncamyuva-bachatasensual-michiyoli-1.MOV' />
+							<source
+								src='https://bachata-and-more.s3.eu-central-1.amazonaws.com/videos/robinsoncamyuva-bachatasensual-michiyoli-1.MOV'
+								type='video/mp4'
+							/>
 						</Player>
 					</div>
 					<div>
 						<h5 className='font-bold text-orange-400'>ROBINSON SomaBay</h5>
 						<Player className='py-2 md:py-5 my-5'>
-							<source src='https://bachata-and-more.s3.eu-central-1.amazonaws.com/videos/robinsonsomabay-bachatasensual-michiyoli-3.MOV' />
+							<source
+								src='https://bachata-and-more.s3.eu-central-1.amazonaws.com/videos/robinsonsomabay-bachatasensual-michiyoli-3.MOV'
+								type='video/mp4'
+							/>
 						</Player>
 					</div>
 					<div>
 						<h5 className='font-bold text-orange-400'>ROBINSON Camyuva</h5>
 						<Player className='py-2 md:py-5 my-5'>
-							<source src='https://bachata-and-more.s3.eu-central-1.amazonaws.com/videos/robinsoncamyuva-bachatasensual-michiyoli-3.MOV' />
+							<source
+								src='https://bachata-and-more.s3.eu-central-1.amazonaws.com/videos/robinsoncamyuva-bachatasensual-michiyoli-3.MOV'
+								type='video/mp4'
+							/>
 						</Player>
 					</div>
 				</div>
