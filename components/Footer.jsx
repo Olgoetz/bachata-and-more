@@ -13,7 +13,7 @@ const Footer = () => {
 	}, []);
 
 	return (
-		<div className='w-full bg-black px-5 py-5'>
+		<div className='w-full bg-black px-5 pt-5 pb-2'>
 			<div className='max-w-[1024px] mx-auto'>
 				<div className='grid md:grid-cols-2 md:gap-x-3'>
 					<div className='flex flex-col justify-center'>
@@ -21,7 +21,7 @@ const Footer = () => {
 							Bachata&More.
 						</h1>
 						<ul className='flex flex-col gap-1 mt-2 text-white text-[12px]'>
-							<li className='flex items-center'>
+							{/* <li className='flex items-center'>
 								<HiOutlineMail size={20} className='mr-1' />
 								<a href='mailto:michi@bachata-and-more.de'>
 									Persönlich: michi@bachata-and-more.de
@@ -38,11 +38,11 @@ const Footer = () => {
 								<a href='mailto:booking@bachata-and-more.de'>
 									Buchung: booking@bachata-and-more.de
 								</a>
-							</li>
+							</li> */}
 							<li className='flex items-center'>
 								<HiOutlineMail size={20} className='mr-1' />
 								<a href='mailto:info@bachata-and-more.de'>
-									Allgemein: info@bachata-and-more.de
+									info@bachata-and-more.de
 								</a>
 							</li>
 						</ul>
