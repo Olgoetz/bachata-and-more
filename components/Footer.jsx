@@ -13,7 +13,7 @@ const Footer = () => {
 	}, []);
 
 	return (
-		<div className='w-full bg-black px-5 py-5'>
+		<div className='w-full bg-black px-5 pt-5 pb-2'>
 			<div className='max-w-[1024px] mx-auto'>
 				<div className='grid md:grid-cols-2 md:gap-x-3'>
 					<div className='flex flex-col justify-center'>
