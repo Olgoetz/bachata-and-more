@@ -2,6 +2,7 @@ import AboutUs from '../components/AboutUs';
 import Bachata from '../components/Bachata';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import Events from '../components/Events';
 import Hero from '../components/Hero';
 import More from '../components/More';
 import Head from 'next/head';
@@ -22,6 +23,7 @@ function Home() {
 			<Hero />
 			<Bachata />
 			<More />
+			<Events />
 			<Contact />
 			<AboutUs />
 			<Footer />
