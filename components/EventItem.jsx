@@ -10,14 +10,14 @@ const EventItem = ({ image, title, date, address, bookingLink }) => {
 		<li className='flex flex-col items-center md:flex-row shadow-xl round-lg p-3 my-3'>
 			<Image src={image} width={250} height={150} />
 			<div className='flex flex-col md:ml-4 w-full gap-3'>
-				<h2 className='text-lg text-center md:text-left md:text-2xl font-bold'>
+				<h2 className='text-lg text-center mt-1 md:text-left md:text-2xl font-bold'>
 					{title}
 				</h2>
-				<div className='flex items-center'>
+				<div className='flex items-center gap-0.5'>
 					<MdDateRange size={20} className='mr-1' />
 					<time className='font-bold'>{date}</time>
 				</div>
-				<div className='flex items-center'>
+				<div className='flex items-center gap-0.5 whitespace-pre'>
 					<GrLocation size={20} className='mr-1' />
 					<address className='text-sm'>{formatedAddress}</address>
 				</div>

@@ -11,7 +11,7 @@ const Events = () => {
 				'https://www.robinson.com/media/_processed_/c/5/csm_sm96__7320_5c03d9b8f6.jpg',
 			date: '18.03 - 25.03.2023',
 			address:
-				'Soma Bay km 48, Safaga Road P.O. Box 149, 84651 Hurghada (Ägypen)',
+				'Soma Bay km 48 Safaga Road P.O. Box 149, 84651 Hurghada (Ägypen)',
 			bookingLink:
 				'https://www.robinson.com/de/de/cluburlaub/aegypten/soma-bay/detailseite/',
 		},
@@ -21,7 +21,7 @@ const Events = () => {
 			image:
 				'https://www.robinson.com/media/_processed_/8/c/csm_cv41_13780_Hauptpool_ecc946438c.jpg',
 			date: '11.08 - 18.08.2023',
-			address: 'Çamyuva No:2, Turizm Blv., 07980 Kemer/Antalya (Türkei)',
+			address: 'Çamyuva No:2 Turizm Blv., 07980 Kemer/Antalya (Türkei)',
 			bookingLink:
 				'https://www.robinson.com/de/de/cluburlaub/tuerkei/camyuva/club-details/',
 		},
@@ -32,7 +32,7 @@ const Events = () => {
 				'https://www.robinson.com/media/_processed_/c/5/csm_sm96__7320_5c03d9b8f6.jpg',
 			date: '19.10 - 26.10.2023',
 			address:
-				'Soma Bay km 48, Safaga Road P.O. Box 149, 84651 Hurghada (Ägypen)',
+				'Soma Bay km 48 Safaga Road P.O. Box 149, 84651 Hurghada (Ägypen)',
 			bookingLink:
 				'https://www.robinson.com/de/de/cluburlaub/aegypten/soma-bay/detailseite/',
 		},
