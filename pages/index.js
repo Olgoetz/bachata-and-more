@@ -7,7 +7,7 @@ import Hero from '../components/Hero';
 import More from '../components/More';
 import Head from 'next/head';
 import '../node_modules/video-react/dist/video-react.css';
-
+import events from '../data/events.json';
 function Home() {
 	return (
 		<>
@@ -23,7 +23,7 @@ function Home() {
 			<Hero />
 			<Bachata />
 			<More />
-			<Events />
+			<Events events={events} />
 			<Contact />
 			<AboutUs />
 			<Footer />

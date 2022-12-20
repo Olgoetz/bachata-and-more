@@ -16,7 +16,7 @@ const More = () => {
 			<div id='more' className='w-full bg-gray-100 py-16 px-4'>
 				<div className='max-w-[1024px] pt-8 mx-auto'>
 					<p className='text-xl uppercase font-bold text-orange-400'>MORE</p>
-					<h1 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2 mb-20'>
+					<h1 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2 mb-10'>
 						Workout, Dance, Body & Mind
 					</h1>
 					<div className='text-justify mx-auto grid md:grid-cols-3 md:gap-x-3'>
