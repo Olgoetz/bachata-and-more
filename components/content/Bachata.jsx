@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import MichiYOli from '../public/images/MichiyOli_bachata.webp';
+import MichiYOli from '../../public/images/MichiyOli_bachata.webp';
 import React from 'react';
 import { Player } from 'video-react';
 import Image from 'next/image';

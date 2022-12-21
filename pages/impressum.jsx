@@ -2,12 +2,12 @@ const Impressum = () => {
 	return (
 		<div className='w-full bg-white py-16 px-4'>
 			<div className='max-w-[1024px] py-8 mx-auto'>
-				<p
+				<h1
 					name='impressum'
 					className='mt-4 text-xl uppercase font-bold text-orange-400'
 				>
 					Impressum
-				</p>
+				</h1>
 				<div className='mt-4 text-sm text-justify'>
 					<p className='font-bold'>Angaben gemäß § 5 TMG</p>
 					<br />

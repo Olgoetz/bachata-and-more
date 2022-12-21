@@ -1,8 +1,9 @@
 import Head from 'next/head';
 import Typed from 'react-typed';
-import DownloadConceptButton from './DownloadConceptButton';
+import DownloadConceptButton from '../ui/DownloadConceptButton';
+
 const Hero = () => {
-	console.log(process.env.NODE_ENV);
+	//console.log(process.env.NODE_ENV);
 	return (
 		<>
 			<Head>

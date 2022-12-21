@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { useForm } from 'react-hook-form';
-import ContactImg from '../public/images/MichiyOli_contact.webp';
+import ContactImg from '../../public/images/MichiyOli_contact.webp';
 import Image from 'next/image';
 import emailjs from '@emailjs/browser';
 import { useEffect, useState } from 'react';
@@ -40,7 +40,6 @@ const Contact = () => {
 	};
 	console.log(errors);
 	const onSubmit = async (data) => {
-		console.log(data);
 		try {
 			const result = await emailjs.send(
 				'service_kzia32x',

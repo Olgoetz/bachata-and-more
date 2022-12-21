@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import AboutsUsImg from '../public/images/MichiyOli_aboutus.webp';
+import AboutsUsImg from '../../public/images/MichiyOli_aboutus.webp';
 import Image from 'next/image';
 const AboutUs = () => {
 	return (
