@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Workout from '../public/images/gewichtheben.webp';
-import Dance from '../public/images/partymenschen.webp';
-import BodyMind from '../public/images/yoga.webp';
+import Workout from '../../public/images/gewichtheben.webp';
+import Dance from '../../public/images/partymenschen.webp';
+import BodyMind from '../../public/images/yoga.webp';
 const More = () => {
 	return (
 		<>

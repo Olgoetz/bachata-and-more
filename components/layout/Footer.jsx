@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { BiCopyright } from 'react-icons/bi';
 import { HiOutlineMail } from 'react-icons/hi';
 import Link from 'next/link';
-import DownloadConceptButton from './DownloadConceptButton';
+import DownloadConceptButton from '../ui/DownloadConceptButton';
 const Footer = () => {
 	const [currentDate, setCurrentDate] = useState();
 
@@ -56,6 +56,8 @@ const Footer = () => {
 						{/* <span className='px-2'>|</span> */}
 
 						<Link href='/impressum'>Impressum</Link>
+						<span className='mx-2'>|</span>
+						<Link href='/datenschutz'>Datenschutz</Link>
 					</div>
 					<div className='flex justify-center'>
 						<BiCopyright size={20} className='mr-1' />

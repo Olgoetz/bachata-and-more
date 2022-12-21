@@ -1,10 +1,9 @@
-import AboutUs from '../components/AboutUs';
-import Bachata from '../components/Bachata';
-import Contact from '../components/Contact';
-import Footer from '../components/Footer';
-import Events from '../components/Events';
-import Hero from '../components/Hero';
-import More from '../components/More';
+import AboutUs from '../components/content/AboutUs';
+import Bachata from '../components/content/Bachata';
+import Contact from '../components/content/Contact';
+import Events from '../components/content/events/Events';
+import Hero from '../components/content/Hero';
+import More from '../components/content/More';
 import Head from 'next/head';
 import '../node_modules/video-react/dist/video-react.css';
 import events from '../data/events.json';
@@ -26,7 +25,6 @@ function Home() {
 			<Events events={events} />
 			<Contact />
 			<AboutUs />
-			<Footer />
 		</>
 	);
 }
