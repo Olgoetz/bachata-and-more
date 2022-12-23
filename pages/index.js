@@ -6,8 +6,9 @@ import Hero from '../components/content/Hero';
 import More from '../components/content/More';
 import Head from 'next/head';
 import '../node_modules/video-react/dist/video-react.css';
-import events from '../data/events.json';
-function Home() {
+import { getAllEvents } from '../helpers/api-utils';
+
+function Home(props) {
 	return (
 		<>
 			<Head>
@@ -22,11 +23,19 @@ function Home() {
 			<Hero />
 			<Bachata />
 			<More />
-			<Events events={events} />
+			<Events events={props.events} />
 			<Contact />
 			<AboutUs />
 		</>
 	);
+}
+
+export async function getStaticProps() {
+	return {
+		props: {
+			events: await getAllEvents(),
+		},
+	};
 }
 
 export default Home;

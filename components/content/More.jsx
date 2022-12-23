@@ -6,13 +6,6 @@ import BodyMind from '../../public/images/yoga.webp';
 const More = () => {
 	return (
 		<>
-			<Head>
-				<title>More - Fitnesskurse für jeden</title>
-				<meta
-					name='description'
-					content='More umfasst Fitnesskurse aus den Bereichen Workout, Aerobic, Dance und Body & Mind'
-				/>
-			</Head>
 			<div id='more' className='w-full bg-gray-100 py-16 px-4'>
 				<div className='max-w-[1024px] pt-8 mx-auto'>
 					<p className='text-xl uppercase font-bold text-orange-400'>MORE</p>

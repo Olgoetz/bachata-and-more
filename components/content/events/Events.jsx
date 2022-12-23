@@ -1,18 +1,9 @@
-import Head from 'next/head';
 import React from 'react';
 import EventItem from './EventItem';
 
 const Events = ({ events }) => {
 	return (
 		<>
-			<Head>
-				<title>Events</title>
-				<meta
-					name='description'
-					content='Bachata and More Events bzw. Eventübersicht'
-				/>
-			</Head>
-
 			<div id='events' className='w-full bg-white py-16 px-4'>
 				<div className='max-w-[1024px] pt-8 mx-auto '>
 					<p className='text-xl uppercase font-bold text-orange-400'>Events</p>

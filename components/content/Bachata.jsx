@@ -7,14 +7,6 @@ import Image from 'next/image';
 const Bachata = () => {
 	return (
 		<>
-			<Head>
-				<title>Bachata Sensual</title>
-				<meta
-					name='description'
-					content='Bachata Sensual Beschreibung und Videos'
-				/>
-			</Head>
-
 			<div id='bachata' className='w-full bg-white py-16 px-4'>
 				<div className='max-w-[1024px] pt-8 mx-auto '>
 					<div className='grid md:grid-cols-2 md:gap-x-3'>

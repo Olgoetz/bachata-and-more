@@ -1,26 +1,9 @@
-import Head from 'next/head';
 import { useForm } from 'react-hook-form';
 import ContactImg from '../../public/images/MichiyOli_contact.webp';
 import Image from 'next/image';
 import emailjs from '@emailjs/browser';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 const Contact = () => {
-	// const [inputs, setInputs] = useState({
-	// 	lastname: '',
-	// 	forename: '',
-	// 	email: '',
-	// 	message: '',
-	// });
-
-	// const handleChange = (event) => {
-	// 	const name = event.target.name;
-	// 	const value = event.target.value;
-	// 	setInputs((values) => ({ ...values, [name]: value }));
-	// };
-	// const handleSubmit = (event) => {
-	// 	event.preventDefault();
-	// 	setInputs({ lastname: '', forename: '', email: '', message: '' });
-	// };
 	const [submitStatus, setSubmitStatus] = useState({ message: '', status: 0 });
 	const {
 		register,
@@ -30,15 +13,11 @@ const Contact = () => {
 		formState: { errors },
 	} = useForm();
 
-	// useEffect(() => {
-	// 	reset();
-	// 	setTimeout(setSubmitStatus({ message: '', status: 0 }), 5000);
-	// }, []);
 	const cleanUp = async () => {
 		reset();
 		setTimeout(() => setSubmitStatus({ message: '', status: 0 }), 5000);
 	};
-	console.log(errors);
+
 	const onSubmit = async (data) => {
 		try {
 			const result = await emailjs.send(
@@ -56,13 +35,6 @@ const Contact = () => {
 	};
 	return (
 		<>
-			<Head>
-				<title>Kontakt</title>
-				<meta
-					name='description'
-					content='Kontaktanfragen für Bachata and More Events'
-				/>
-			</Head>
 			<div id='contact' className='w-full bg-black py-16 px-4'>
 				<div className='max-w-[1024px] pt-8 mx-auto'>
 					<p
@@ -88,8 +60,14 @@ const Contact = () => {
 							className='w-full flex mx-auto flex-col gap-3 flex-wrap items-center'
 						>
 							<div className='w-full flex flex-col'>
-								<label className='uppercase font-bold text-white'>Name</label>
+								<label
+									htmlFor='lastname'
+									className='uppercase font-bold text-white'
+								>
+									Name
+								</label>
 								<input
+									id='lastname'
 									name='lastName'
 									type='text'
 									{...register('lastName', {
@@ -104,10 +82,14 @@ const Contact = () => {
 								}
 							</div>
 							<div className='w-full flex flex-col'>
-								<label className='uppercase font-bold text-white'>
+								<label
+									htmlFor='firstName'
+									className='uppercase font-bold text-white'
+								>
 									Vorname
 								</label>
 								<input
+									id='firstName'
 									name='firstName'
 									type='text'
 									{...register('firstName', {
@@ -122,10 +104,14 @@ const Contact = () => {
 								}
 							</div>
 							<div className='w-full flex flex-col'>
-								<label className='uppercase font-bold text-white'>
+								<label
+									htmlFor='email'
+									className='uppercase font-bold text-white'
+								>
 									Email-Adresse
 								</label>
 								<input
+									id='email'
 									name='email'
 									type='text'
 									{...register('email', {
@@ -147,10 +133,14 @@ const Contact = () => {
 								}
 							</div>
 							<div className='w-full flex flex-col'>
-								<label className='uppercase font-bold text-white'>
+								<label
+									htmlFor='message'
+									className='uppercase font-bold text-white'
+								>
 									Nachricht
 								</label>
 								<textarea
+									id='message'
 									name='message'
 									{...register('message', {
 										required: 'Nachricht darf nicht leer sein',
