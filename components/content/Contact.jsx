@@ -1,7 +1,7 @@
 import { useForm } from 'react-hook-form';
 import ContactImg from '../../public/images/MichiyOli_contact.webp';
 import Image from 'next/image';
-import emailjs from '@emailjs/browser';
+import { sendEmail } from '../../helpers/api-utils';
 import { useState } from 'react';
 const Contact = () => {
 	const [submitStatus, setSubmitStatus] = useState({ message: '', status: 0 });
@@ -19,18 +19,49 @@ const Contact = () => {
 	};
 
 	const onSubmit = async (data) => {
-		try {
-			const result = await emailjs.send(
-				'service_kzia32x',
-				'template_ofu6vkv',
-				data,
-				'WIQpvQ2eC1E8tBmhX'
-			);
-			setSubmitStatus({ status: result.status, message: result.text });
-		} catch (error) {
-			console.log(error.text);
-			setSubmitStatus({ status: error.status, message: error.text });
+		const emailBody = `
+			<div>
+				<h1 style='padding-bottom:15px;'>Hi Michi und Oli,</h1>
+				Eine neue Nachricht kam gerade rein:
+				<div style='font-size:12px;padding-top:12px;'>
+					<p>Vorname: ${data.firstName}</p>
+					<p>Nachname: ${data.lastName}</p>
+					Email: ${data.email}
+					<p>
+						Nachricht: <br />
+						${data.message}
+					</p>
+				</div>
+			</div>
+		`;
+
+		const email = {
+			sourceAddress: process.env.EMAIL_SOURCE_ADDRESS,
+			subject: `Neue Nachricht von ${data.firstName}`,
+			message: emailBody,
+			recipients: ['oli@bachata-and-more.de'],
+		};
+
+		const response = await sendEmail(email);
+		console.log(response);
+		if ('error' in response['result']['emailApiResponse']) {
+			setSubmitStatus({
+				status: 500,
+				message: 'Etwas ist schief gelaufen. Versuche es nochmal!',
+			});
 		}
+		if (response.statusCode != 200) {
+			setSubmitStatus({
+				status: response.statusCode,
+				message: 'Etwas ist schief gelaufen. Versuche es nochmal!',
+			});
+		} else {
+			setSubmitStatus({
+				status: response.statusCode,
+				message: 'Nachricht verschickt',
+			});
+		}
+
 		await cleanUp();
 	};
 	return (
@@ -166,14 +197,12 @@ const Contact = () => {
 							</button>
 							{submitStatus.status === 200 && (
 								<div className='w-full mt-1 flex flex-col items-center'>
-									<p className='text-green-600 '>Nachricht gesendet!</p>
+									<p className='text-green-600 '>{submitStatus.message}!</p>
 								</div>
 							)}
-							{Object.keys(errors).length !== 0 && (
+							{submitStatus.status !== 200 && (
 								<div className='w-full mt-1 flex flex-col items-center'>
-									<p className='text-red-500 '>
-										Versenden fehlgeschlagen. Versuche es später nochmal!
-									</p>
+									<p className='text-red-500 '>{submitStatus.message}</p>
 								</div>
 							)}
 						</form>
