@@ -1,0 +1,11 @@
+POST https://19l17oesb8.execute-api.eu-central-1.amazonaws.com/prod/email HTTP/1.1
+content-type: application/json
+
+{ 
+  
+    "subject": "test",
+    "recipients": ["oli@bachata-and-more.de"],
+    "message": "here I am",
+    "sourceAddress": "no_reply@bachata-and-more.de"
+    
+}
