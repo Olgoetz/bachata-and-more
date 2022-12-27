@@ -8,7 +8,10 @@ function MyApp({ Component, pageProps }) {
 		<>
 			<Head>
 				<title>Bachata and More</title>
-				<meta name='description' content='Bachata and More Events' />
+				<meta
+					name='description'
+					content='Bachata & More - Eventkonzept für Urlaubsorte'
+				/>
 				<meta name='viewport' content='width=device-width, initial-scale=1.0' />
 			</Head>
 			<Navbar />
