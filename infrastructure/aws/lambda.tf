@@ -1,7 +1,7 @@
 
 ## LOGGING
 resource "aws_cloudwatch_log_group" "lambda" {
-  name = "/aws/lambda/${local.function_name}"
+  name              = "/aws/lambda/${local.function_name}"
   retention_in_days = 3
 }
 
@@ -9,9 +9,9 @@ resource "aws_cloudwatch_log_group" "lambda" {
 ## LAMBDA
 
 data "archive_file" "lambda" {
-  type = "zip"
-  source_dir = "${path.module}/source"
-  output_path = "${path.module}/${local.function_name}.zip"
+  type             = "zip"
+  source_dir       = "${path.module}/source"
+  output_path      = "${path.module}/${local.function_name}.zip"
   output_file_mode = "0666"
 }
 
@@ -34,12 +34,12 @@ resource "aws_iam_role" "lambda" {
 }
 
 resource "aws_iam_role_policy_attachment" "lambda" {
-    role = aws_iam_role.lambda.name
-    policy_arn = "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+  role       = aws_iam_role.lambda.name
+  policy_arn = "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
 }
 
 resource "aws_lambda_function" "lambda" {
-    description = "Proxies requests to the email API."
+  description   = "Proxies requests to the email API."
   filename      = data.archive_file.lambda.output_path
   function_name = local.function_name
   role          = aws_iam_role.lambda.arn
@@ -49,13 +49,13 @@ resource "aws_lambda_function" "lambda" {
 
   runtime = "python3.8"
 
-    environment {
-        variables = {
-            STAGE = var.api_stage
-            API_URL = var.api_url
-            API_KEY = var.api_key
-        }
+  environment {
+    variables = {
+      STAGE   = var.api_stage
+      API_URL = var.api_url
+      API_KEY = var.api_key
     }
+  }
 
 }
 
