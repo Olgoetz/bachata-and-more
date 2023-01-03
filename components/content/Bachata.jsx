@@ -1,10 +1,9 @@
-import Head from 'next/head';
 import MichiYOli from '../../public/images/MichiyOli_bachata.webp';
 import React from 'react';
-import { Player } from 'video-react';
 import Image from 'next/image';
+import Videos from './videos/Videos';
 
-const Bachata = () => {
+const Bachata = ({ videos }) => {
 	return (
 		<>
 			<div id='bachata' className='w-full bg-white py-16 px-4'>
@@ -40,20 +39,10 @@ const Bachata = () => {
 							/>
 						</div>
 					</div>
-					<h3 className='md:text-3xl sm:text-2xl text-1xl font-bold py-2'>
-						Bachata Videos
-					</h3>
-					<div className='max-w-[1024px] mx-auto grid md:grid-cols-3 gap-y-3 md:gap-x-3'>
-						<div>
-							<h5 className='font-bold text-orange-400'>ROBINSON Camyuva</h5>
-							<Player className='py-2 md:py-5 my-5'>
-								<source
-									src='https://bachata-and-more.s3.eu-central-1.amazonaws.com/videos/robinsoncamyuva-bachatasensual-michiyoli-1.MOV'
-									type='video/mp4'
-								/>
-							</Player>
-						</div>
-						<div>
+
+					<div className='max-w-[1024px]'>
+						<Videos videos={videos} />
+						{/* <div>
 							<h5 className='font-bold text-orange-400'>ROBINSON SomaBay</h5>
 							<Player className='py-2 md:py-5 my-5'>
 								<source
@@ -70,7 +59,7 @@ const Bachata = () => {
 									type='video/mp4'
 								/>
 							</Player>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</div>

@@ -3,7 +3,10 @@ import ContactImg from '../../public/images/MichiyOli_contact.webp';
 import Image from 'next/image';
 import { sendEmail } from '../../helpers/api-utils';
 import { useState } from 'react';
+import { ClockLoader } from 'react-spinners';
+
 const Contact = () => {
+	const [isLoading, setIsLoading] = useState(false);
 	const [submitStatus, setSubmitStatus] = useState({ message: '', status: 0 });
 	const {
 		register,
@@ -41,8 +44,9 @@ const Contact = () => {
 			message: emailBody,
 			recipients: ['oli@bachata-and-more.de'],
 		};
-
+		setIsLoading(true);
 		const response = await sendEmail(email);
+		setIsLoading(false);
 		console.log(response);
 		if ('error' in response['result']['emailApiResponse']) {
 			setSubmitStatus({
@@ -195,6 +199,11 @@ const Contact = () => {
 							>
 								Abschicken
 							</button>
+							{isLoading && (
+								<div className='w-full mt-1 flex flex-col items-center'>
+									<ClockLoader color='#ffffff' size={50} />
+								</div>
+							)}
 							{submitStatus.status === 200 && (
 								<div className='w-full mt-1 flex flex-col items-center'>
 									<p className='text-green-600 '>{submitStatus.message}!</p>
