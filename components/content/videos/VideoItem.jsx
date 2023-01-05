@@ -2,11 +2,12 @@ import React from 'react';
 import VideoJS from '../../ui/VideoJS';
 import 'video.js/dist/video-js.css';
 
-const VideoItem = ({ title, hlsUrl }) => {
+const VideoItem = ({ title, hlsUrl, poster }) => {
 	const playerRef = React.useRef(null);
 
 	const videoJsOptions = {
 		autoplay: false,
+		poster: poster,
 		controls: true,
 		responsive: true,
 		fluid: true,
