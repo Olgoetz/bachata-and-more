@@ -1,6 +1,6 @@
 import React from 'react';
 import VideoItem from './VideoItem';
-
+import ReactPlayer from 'react-player';
 const getPoster = () => {
 	const num = Math.floor(Math.random() * 4);
 	const locations = [
@@ -19,7 +19,7 @@ const Videos = ({ videos }) => {
 				<h3 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2 mb-3'>
 					Videos
 				</h3>
-				<div className='text-justify grid md:grid-cols-3 md:gap-x-2'>
+				{/* <div className='text-justify grid md:grid-cols-2 md:gap-x-3'>
 					{videos.map((video) => (
 						<VideoItem
 							poster={getPoster()}
@@ -27,6 +27,24 @@ const Videos = ({ videos }) => {
 							title={video.title}
 							hlsUrl={video.hlsUrl}
 						/>
+					))}
+				</div> */}
+				<div className='text-justify grid md:grid-cols-2 md:gap-x-3'>
+					{videos.map((video) => (
+						<div key={video.hlsUrl} className='shadow-xl round-lg'>
+							<div>
+								<h5 className='font-bold text-center text-orange-400 uppercase my-2'>
+									{video.title}
+								</h5>
+								<ReactPlayer
+									width='100%'
+									height='100%'
+									controls
+									playsinline
+									url={video.hlsUrl}
+								/>
+							</div>
+						</div>
 					))}
 				</div>
 			</div>

@@ -17,8 +17,11 @@
     "react-dom": "18.2.0",
     "react-hook-form": "^7.39.3",
     "react-icons": "^4.6.0",
+    "react-player": "^2.11.0",
     "react-spinners": "^0.13.7",
     "react-typed": "^1.2.0",
+    "redux": "^4.2.0",
+    "video-react": "^0.16.0",
     "video.js": "^7.20.3"
   },
   "devDependencies": {

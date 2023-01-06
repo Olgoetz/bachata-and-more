@@ -1,7 +1,8 @@
 import MichiYOli from '../../public/images/MichiyOli_bachata.webp';
 import React from 'react';
 import Image from 'next/image';
-import Videos from './videos/Videos';
+//import Videos from './videos/Videos';
+import ReactPlayer from 'react-player';
 
 const Bachata = ({ videos }) => {
 	return (
@@ -40,26 +41,28 @@ const Bachata = ({ videos }) => {
 						</div>
 					</div>
 
-					<div className='max-w-[1024px]'>
-						<Videos videos={videos} />
-						{/* <div>
-							<h5 className='font-bold text-orange-400'>ROBINSON SomaBay</h5>
-							<Player className='py-2 md:py-5 my-5'>
-								<source
-									src='https://bachata-and-more.s3.eu-central-1.amazonaws.com/videos/robinsonsomabay-bachatasensual-michiyoli-3.MOV'
-									type='video/mp4'
-								/>
-							</Player>
+					<div className='max-w-[1024px] bg-white'>
+						<h3 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2 mb-3'>
+							Videos
+						</h3>
+						<div className='text-justify grid md:grid-cols-2 md:gap-x-3'>
+							{videos.map((video) => (
+								<div key={video.hlsUrl} className='shadow-xl round-lg'>
+									<div>
+										<h5 className='font-bold text-center text-orange-400 uppercase my-2'>
+											{video.title}
+										</h5>
+										<ReactPlayer
+											width='100%'
+											height='100%'
+											controls
+											playsinline
+											url={video.hlsUrl}
+										/>
+									</div>
+								</div>
+							))}
 						</div>
-						<div>
-							<h5 className='font-bold text-orange-400'>ROBINSON Camyuva</h5>
-							<Player className='py-2 md:py-5 my-5'>
-								<source
-									src='https://bachata-and-more.s3.eu-central-1.amazonaws.com/videos/robinsoncamyuva-bachatasensual-michiyoli-3.MOV'
-									type='video/mp4'
-								/>
-							</Player>
-						</div> */}
 					</div>
 				</div>
 			</div>
