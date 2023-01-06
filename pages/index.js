@@ -5,14 +5,13 @@ import Events from '../components/content/events/Events';
 import Hero from '../components/content/Hero';
 import More from '../components/content/More';
 
-import '../node_modules/video-react/dist/video-react.css';
-import { getAllEvents } from '../helpers/api-utils';
+import { getAllEvents, getAllVideos } from '../helpers/api-utils';
 
 function Home(props) {
 	return (
 		<>
 			<Hero />
-			<Bachata />
+			<Bachata videos={props.videos} />
 			<More />
 			<Events events={props.events} />
 			<Contact />
@@ -25,6 +24,7 @@ export async function getStaticProps() {
 	return {
 		props: {
 			events: await getAllEvents(),
+			videos: await getAllVideos(),
 		},
 	};
 }

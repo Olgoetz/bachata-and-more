@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "eu-central-1"
+  region              = "eu-central-1"
   shared_config_files = ["~/.aws/credentials"]
 }
 
@@ -8,7 +8,7 @@ data "aws_region" "current" {}
 
 resource "random_string" "lambda" {
   special = false
-  length = 5
+  length  = 5
 }
 
 locals {
