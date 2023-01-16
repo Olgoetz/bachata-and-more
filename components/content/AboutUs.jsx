@@ -36,7 +36,7 @@ const AboutUs = () => {
 								>
 									www.fitnessraum.de
 								</a>
-								) . Zudem ist sie Referentin und Ausbilderin für die IFAA.
+								). Zudem ist sie Referentin und Ausbilderin für die IFAA.
 							</p>
 							<p className='py-1'>
 								<span className='font-bold'> Oli</span> ist über 10 Jahre im
