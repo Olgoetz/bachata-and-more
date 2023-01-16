@@ -1,19 +1,11 @@
 import { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import { useRouter } from 'next/router';
+
 //import { Link } from 'react-scroll';
 import Link from 'next/link';
 const Navbar = () => {
 	const [nav, setNav] = useState(false);
 	const [shadow, setShadow] = useState(false);
-	const [navBgColor, setNavBgColor] = useState('bg-white');
-
-	const router = useRouter();
-	useEffect(() => {
-		useRouter.asPath == '/impressum'
-			? setNavBgColor('bg-black')
-			: setNavBgColor('bg-white');
-	}, [router]);
 
 	useEffect(() => {
 		const handleShadow = () => {
