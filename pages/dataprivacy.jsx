@@ -11,7 +11,7 @@ const Dataprivacy = () => {
 					</h1>
 
 					<p>
-						Wir freuen uns sehr über Ihr Interesse an unserem Unternehmen.
+						Wir freuen uns sehr über Ihr Interesse an Bachata & More.
 						Datenschutz hat einen besonders hohen Stellenwert für Michaela
 						Süßbauer & Oliver Götz. Eine Nutzung der Internetseiten von Michaela
 						Süßbauer & Oliver Götz ist grundsätzlich ohne jede Angabe

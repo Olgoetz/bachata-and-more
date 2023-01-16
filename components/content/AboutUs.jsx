@@ -26,8 +26,8 @@ const AboutUs = () => {
 								>
 									www.michaela-suessbauer.de
 								</a>
-								). Seit 15 Jahren entwickelt Michi Fitnessvideos für eine
-								Onlineplattform (
+								). Seit 15 Jahren entwickelt Michi Fitnessvideos. Früher als
+								DVDs, heute für eine Onlineplattform (
 								<a
 									className='italic hover:underline'
 									href='https://www.fitnessraum.de'
