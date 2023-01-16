@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import AboutsUsImg from '../../public/images/MichiyOli_aboutus.webp';
 import Image from 'next/image';
 const AboutUs = () => {
@@ -18,12 +17,30 @@ const AboutUs = () => {
 								<span className='font-bold'>Michi</span> unterrichtet gut 20
 								Jahre schon erfolgreich verschiedenste Kurse im Group Fitness
 								Bereich in namhaften Fitness Studios in München und ist als
-								Personaltrainerin tätig. Zudem ist sie Referentin für die IFAA.
+								Personaltrainerin tätig (
+								<a
+									className='italic hover:underline'
+									href='https://www.michaela-suessbauer.de'
+									target='_blank'
+								>
+									www.michaela-suessbauer.de
+								</a>
+								). Seit 15 Jahren entwickelt Michi Fitnessvideos für eine
+								Onlineplattform (
+								<a
+									className='italic hover:underline'
+									href='https://www.fitnessraum.de'
+									target='_blank'
+								>
+									www.fitnessraum.de
+								</a>
+								) . Zudem ist sie Referentin und Ausbilderin für die IFAA.
 							</p>
 							<p className='py-1'>
 								<span className='font-bold'> Oli</span> ist über 10 Jahre im
-								Fitness Bereich tätig, absolvierte zahlreiche Ausbildungen und
-								bildet regelmäßig für IFHIAS aus.
+								Fitness Bereich tätig, absolvierte zahlreiche Ausbildungen (z.B.
+								HOT IRON©, Indoor Cycling, Deepwork, Animal Flow, Step &
+								Aerobic) und bildet regelmäßig für IFHIAS aus.
 							</p>
 							<p>
 								<span className='font-bold'>Michi & Oli</span> lernten sich 2018
