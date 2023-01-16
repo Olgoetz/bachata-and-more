@@ -22,6 +22,7 @@ const AboutUs = () => {
 									className='italic hover:underline'
 									href='https://www.michaela-suessbauer.de'
 									target='_blank'
+									rel='noreferrer'
 								>
 									www.michaela-suessbauer.de
 								</a>
@@ -31,6 +32,7 @@ const AboutUs = () => {
 									className='italic hover:underline'
 									href='https://www.fitnessraum.de'
 									target='_blank'
+									rel='noreferrer'
 								>
 									www.fitnessraum.de
 								</a>
