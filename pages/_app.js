@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
 				<meta property='og:type' content='image/png' />
 				<meta
 					property='og:image'
-					content='../public/images/MichiyOli_hero.png'
+					content='https://bachata-and-more.s3.eu-central-1.amazonaws.com/pictures/MichiyOli_hero.png'
 				/>
 				<meta property='og:image:width' content='1200' />
 
