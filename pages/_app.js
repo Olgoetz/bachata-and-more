@@ -19,11 +19,11 @@ function MyApp({ Component, pageProps }) {
 					property='og:description'
 					content='Workout-, Yoga- sowie Bachatakurse für Events'
 				/>
+				<meta property='og:type' content='image/jpg' />
 				<meta
 					property='og:image'
 					content='../public/images_original/MichiyOli_hero.jpg'
 				/>
-				<meta property='og:type' content='website' />
 				<meta property='og:locale' content='de_DE' />
 			</Head>
 			<Navbar />
