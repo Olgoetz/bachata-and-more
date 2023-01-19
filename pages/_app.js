@@ -19,10 +19,10 @@ function MyApp({ Component, pageProps }) {
 					property='og:description'
 					content='Workout-, Yoga- sowie Bachatakurse für Events'
 				/>
-
+				<meta property='og:type' content='image/png' />
 				<meta
 					property='og:image'
-					content='https://www.pngitem.com/pimgs/m/513-5132146_terraform-icon-png-transparent-png.png'
+					content='../public/images/MichiyOli_hero.png'
 				/>
 				<meta property='og:image:width' content='1200' />
 
