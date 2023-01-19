@@ -10,9 +10,21 @@ function MyApp({ Component, pageProps }) {
 				<title>Bachata and More</title>
 				<meta
 					name='description'
-					content='Bachata & More - Eventkonzept für Urlaubsorte'
+					content='Workout-, Yoga- sowie Bachatakurse für Events'
 				/>
 				<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+				<meta property='og:title' content='Bachata & More' />
+				<meta property='og:url' content='https://www.example.com/webpage/' />
+				<meta
+					property='og:description'
+					content='Workout-, Yoga- sowie Bachatakurse für Events'
+				/>
+				<meta
+					property='og:image'
+					content='../public/images/MichiyOli_hero.webp'
+				/>
+				<meta property='og:type' content='website' />
+				<meta property='og:locale' content='de_DE' />
 			</Head>
 			<Navbar />
 			<Component {...pageProps} />
