@@ -84,7 +84,7 @@ const Contact = () => {
 					<div className='grid md:grid-cols-2 md:gap-x-4'>
 						<div className='my-4'>
 							<Image
-								alt=''
+								alt='Michi-und-Oli_BachataSensual'
 								className='w-full h-full object-cover'
 								src={ContactImg}
 							/>

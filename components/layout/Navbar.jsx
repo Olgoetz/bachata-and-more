@@ -21,7 +21,7 @@ const Navbar = () => {
 		setNav(!nav);
 	};
 	return (
-		<div
+        <div
 			//style={{ 'background-color': `${navBgColor}` }}
 			className={
 				shadow
@@ -31,7 +31,7 @@ const Navbar = () => {
 			//className='absolute w-full h-20 shadow-xl z-[100] bg-white ease-in-out duration-300 px-5'
 		>
 			<div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-				<Link href='/'>
+				<Link href='/' legacyBehavior>
 					<h1 className='block text-3xl font-bold text-orange-400'>
 						Bachata&More.
 					</h1>
@@ -95,7 +95,7 @@ const Navbar = () => {
 								</div>
 								<div className='py-4 flex flex-col'>
 									<ul className='uppercase'>
-										<Link href='/'>
+										<Link href='/' legacyBehavior>
 											<li
 												onClick={() => setNav(false)}
 												className='py-4 text-sm border-b'
@@ -104,7 +104,7 @@ const Navbar = () => {
 											</li>
 										</Link>
 
-										<Link href='/#bachata'>
+										<Link href='/#bachata' legacyBehavior>
 											<li
 												onClick={() => setNav(false)}
 												className='py-4 text-sm border-b'
@@ -112,7 +112,7 @@ const Navbar = () => {
 												Bachata
 											</li>
 										</Link>
-										<Link href='/#more'>
+										<Link href='/#more' legacyBehavior>
 											<li
 												onClick={() => setNav(false)}
 												className='py-4 text-sm border-b'
@@ -120,7 +120,7 @@ const Navbar = () => {
 												More
 											</li>
 										</Link>
-										<Link href='/#events'>
+										<Link href='/#events' legacyBehavior>
 											<li
 												onClick={() => setNav(false)}
 												className='py-4 text-sm border-b'
@@ -128,7 +128,7 @@ const Navbar = () => {
 												Events
 											</li>
 										</Link>
-										<Link href='/#contact'>
+										<Link href='/#contact' legacyBehavior>
 											<li
 												onClick={() => setNav(false)}
 												className='py-4 text-sm border-b'
@@ -136,7 +136,7 @@ const Navbar = () => {
 												Kontakt
 											</li>
 										</Link>
-										<Link href='/#aboutus'>
+										<Link href='/#aboutus' legacyBehavior>
 											<li
 												onClick={() => setNav(false)}
 												className='py-4 text-sm whitespace-nowrap border-b'
@@ -152,7 +152,7 @@ const Navbar = () => {
 				</div>
 			</div>
 		</div>
-	);
+    );
 };
 
 export default Navbar;

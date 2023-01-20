@@ -2,7 +2,15 @@ import Head from 'next/head';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 import '../styles/globals.css';
-import Hero from '../public/images_original/MichiyOli_hero.jpg';
+
+import { Raleway } from '@next/font/google';
+
+const raleway = Raleway({
+	subsets: ['latin'],
+	display: 'swap',
+	variable: '--font-raleway',
+});
+
 function MyApp({ Component, pageProps }) {
 	return (
 		<>
@@ -29,9 +37,11 @@ function MyApp({ Component, pageProps }) {
 				<meta property='og:image:height' content='630' />
 				<meta property='og:locale' content='de_DE' />
 			</Head>
-			<Navbar />
-			<Component {...pageProps} />
-			<Footer />
+			<main className={`${raleway.variable} font-sans`}>
+				<Navbar />
+				<Component {...pageProps} />
+				<Footer />
+			</main>
 		</>
 	);
 }

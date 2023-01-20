@@ -8,7 +8,16 @@ const EventItem = ({ image, title, venue, date, address, bookingLink }) => {
 
 	return (
 		<li className='flex flex-col items-center md:flex-row shadow-xl round-lg p-3 my-3'>
-			<Image src={image} alt={venue} width={350} height={1} />
+			<div className='relative w-full h-full'>
+				<Image
+					src={image}
+					alt={venue}
+					width='0'
+					height='0'
+					sizes='100vw'
+					className='w-full h-auto'
+				/>
+			</div>
 
 			<div className='flex flex-col md:ml-4 w-full gap-2'>
 				<h2 className='text-lg mt-1 md:text-2xl font-bold'>{venue}</h2>

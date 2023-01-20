@@ -4,7 +4,7 @@ const AboutUs = () => {
 	return (
 		<>
 			<div id='aboutus' className='w-full bg-white py-16 px-4'>
-				<div className='max-w-[1024px] py-8 mx-auto grid md:grid-cols-2 md:gap-x-3'>
+				<div className='max-w-[1024px] py-8 mx-auto grid md:grid-cols-2 md:gap-x-4'>
 					<div className='flex flex-col justify-center'>
 						<p className='text-xl uppercase font-bold text-orange-400'>
 							Über uns
@@ -59,7 +59,14 @@ const AboutUs = () => {
 						</div>
 					</div>
 					<div className='flex flex-col justify-center'>
-						<Image className='h-[70] mx-auto my-4' src={AboutsUsImg} alt='/' />
+						<Image
+							width='0'
+							height='0'
+							sizes='100vw'
+							className='w-full h-auto mx-auto my-4'
+							src={AboutsUsImg}
+							alt='/'
+						/>
 					</div>
 				</div>
 			</div>

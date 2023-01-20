@@ -1,6 +1,6 @@
 import MichiYOli from '../../public/images/MichiyOli_bachata.webp';
 import React from 'react';
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 //import Videos from './videos/Videos';
 import ReactPlayer from 'react-player';
 import { useState, useEffect } from 'react';
