@@ -39,7 +39,7 @@ const Bachata = ({ videos, bachata }) => {
 								einen fulminanten 3-stündigen Abschlussabend an.
 							</p>
 						</div>
-						<div className='flex flex-col justify-center'>
+						<div className='flex flex-col justify-center my-4'>
 							<Image
 								className='mx-auto my-4'
 								src={MichiYOli}
@@ -48,7 +48,7 @@ const Bachata = ({ videos, bachata }) => {
 						</div>
 					</div>
 
-					<div className='text-justify mx-auto grid gap-y-1 md:grid-cols-3 md:gap-x-3 my-4'>
+					<div className='text-justify mx-auto grid gap-y-1 md:grid-cols-3 md:gap-x-3 my-3'>
 						{bachata.map((b) => (
 							<Accordion
 								key={b.id}
@@ -60,7 +60,7 @@ const Bachata = ({ videos, bachata }) => {
 					</div>
 
 					<div className='max-w-[1024px] bg-white'>
-						<h3 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2 mb-3'>
+						<h3 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2 my-3'>
 							Videos
 						</h3>
 						<div className='text-justify grid md:grid-cols-2 md:gap-x-3'>
