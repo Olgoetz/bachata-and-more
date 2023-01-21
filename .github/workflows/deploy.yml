@@ -21,8 +21,14 @@ jobs:
       - name: Install dependencies
         run: npm install --save --force
 
-      - name: Build app and export static html
+      - name: Build the app
         run: npm run build --if-present
+
+      - name: Generate sitemap
+        run: npm run postbuild
+
+      - name: Export static files
+        run: npm run export
 
       - name: 📂 Upload files
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
