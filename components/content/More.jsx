@@ -12,7 +12,7 @@ const More = ({ classes }) => {
 					<h1 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2 mb-10'>
 						Workout, Dance, Body & Mind
 					</h1>
-					<div className='text-justify mx-auto grid md:grid-cols-3 md:gap-x-3'>
+					<div className='text-justify mx-auto grid gap-y-3 md:grid-cols-3 md:gap-x-3'>
 						<div className='w-full shadow-xl rounded-lg p-4 my-8 flex flex-col justify-center'>
 							<Image src={Workout} className='w-20 mx-auto mt-[-3rem]' alt='' />
 							<h2 className='text-2xl font-bold text-center py-8'>Workout</h2>
@@ -62,7 +62,7 @@ const More = ({ classes }) => {
 								key={c.id}
 								title={c.name}
 								content={c.description}
-								styling='shadow-xl bg-gray-100'
+								styling='shadow-xl bg-gray-100 rounded-lg'
 							/>
 						))}
 						{/* End of grid */}
