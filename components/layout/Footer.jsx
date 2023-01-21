@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { BiCopyright } from 'react-icons/bi';
 import { HiOutlineMail } from 'react-icons/hi';
+import { AiOutlineInstagram } from 'react-icons/ai';
 import Link from 'next/link';
 import DownloadConceptButton from '../ui/DownloadConceptButton';
 const Footer = () => {
@@ -40,9 +41,29 @@ const Footer = () => {
 								</a>
 							</li> */}
 							<li className='flex items-center'>
-								<HiOutlineMail size={20} className='mr-1' />
+								<HiOutlineMail size={25} className='mr-1' />
 								<a href='mailto:info@bachata-and-more.de'>
 									info@bachata-and-more.de
+								</a>
+							</li>
+							<li className='flex items-center'>
+								<AiOutlineInstagram size={25} className='mr-1' />
+								<a
+									href='https://www.instagram.com/michaela_suessbauer/'
+									rel='noreferrer'
+									target='_blank'
+								>
+									Michi
+								</a>
+							</li>
+							<li className='flex items-center'>
+								<AiOutlineInstagram size={25} className='mr-1' />
+								<a
+									href='https://www.instagram.com/oli_goetz/'
+									rel='noreferrer'
+									target='_blank'
+								>
+									Oli
 								</a>
 							</li>
 						</ul>

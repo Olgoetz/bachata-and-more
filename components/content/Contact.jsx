@@ -42,7 +42,7 @@ const Contact = () => {
 			sourceAddress: process.env.EMAIL_SOURCE_ADDRESS,
 			subject: `Neue Nachricht von ${data.firstName}`,
 			message: emailBody,
-			recipients: ['oli@bachata-and-more.de'],
+			recipients: process.env.EMAIL_RECIPIENT_ADDRESSES,
 		};
 		setIsLoading(true);
 		const response = await sendEmail(email);
@@ -84,7 +84,7 @@ const Contact = () => {
 					<div className='grid md:grid-cols-2 md:gap-x-4'>
 						<div className='my-4'>
 							<Image
-								alt=''
+								alt='Michi-und-Oli_BachataSensual'
 								className='w-full h-full object-cover'
 								src={ContactImg}
 							/>

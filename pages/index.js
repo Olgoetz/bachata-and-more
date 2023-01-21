@@ -5,28 +5,21 @@ import Events from '../components/content/events/Events';
 import Hero from '../components/content/Hero';
 import More from '../components/content/More';
 
-import { getAllEvents, getAllVideos } from '../helpers/api-utils';
-
-function Home(props) {
+import events from '../data/events.json';
+import videos from '../data/videos.json';
+import bachata from '../data/bachata.json';
+import more from '../data/more.json';
+function Home() {
 	return (
 		<>
 			<Hero />
-			<Bachata videos={props.videos} />
-			<More />
-			<Events events={props.events} />
+			<Bachata videos={videos} bachata={bachata} />
+			<More classes={more} />
+			<Events events={events} />
 			<Contact />
 			<AboutUs />
 		</>
 	);
-}
-
-export async function getStaticProps() {
-	return {
-		props: {
-			events: await getAllEvents(),
-			videos: await getAllVideos(),
-		},
-	};
 }
 
 export default Home;
