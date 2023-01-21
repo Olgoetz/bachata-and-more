@@ -223,7 +223,8 @@ const Dataprivacy = () => {
 					<p>Website: www.bachata-and-more.de</p>
 
 					<h4 className='my-2'>3. Cookies</h4>
-					<p>
+					<p>Es werden KEINE Cookies gesetzt.</p>
+					{/* <p>
 						Die Internetseiten von Michaela Süßbauer & Oliver Götz verwenden
 						Cookies. Cookies sind Textdateien, welche über einen Internetbrowser
 						auf einem Computersystem abgelegt und gespeichert werden.
@@ -275,7 +276,7 @@ const Dataprivacy = () => {
 						Setzung von Cookies in dem genutzten Internetbrowser, sind unter
 						Umständen nicht alle Funktionen unserer Internetseite vollumfänglich
 						nutzbar.
-					</p>
+					</p> */}
 
 					<h4 className='my-2'>
 						4. Erfassung von allgemeinen Daten und Informationen
@@ -832,7 +833,8 @@ const Dataprivacy = () => {
 						9. Datenschutzbestimmungen zu Einsatz und Verwendung von Google
 						Analytics (mit Anonymisierungsfunktion)
 					</h4>
-					<p>
+					<p>Goolge Analytics wirde NICHT verwendet.</p>
+					{/* <p>
 						Der für die Verarbeitung Verantwortliche hat auf dieser
 						Internetseite die Komponente Google Analytics (mit
 						Anonymisierungsfunktion) integriert. Google Analytics ist ein
@@ -947,7 +949,7 @@ const Dataprivacy = () => {
 						und unter http://www.google.com/analytics/terms/de.html abgerufen
 						werden. Google Analytics wird unter diesem Link
 						https://www.google.com/intl/de_de/analytics/ genauer erläutert.
-					</p>
+					</p> */}
 
 					<h4 className='my-2'>
 						10. Datenschutzbestimmungen zu Einsatz und Verwendung von Instagram

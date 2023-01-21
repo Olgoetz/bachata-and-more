@@ -4,7 +4,8 @@ import Image from 'next/legacy/image';
 //import Videos from './videos/Videos';
 import ReactPlayer from 'react-player';
 import { useState, useEffect } from 'react';
-const Bachata = ({ videos }) => {
+import Accordion from '../ui/Accordion';
+const Bachata = ({ videos, bachata }) => {
 	const [hasWindow, setHasWindow] = useState(false);
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
@@ -45,6 +46,17 @@ const Bachata = ({ videos }) => {
 								alt='Michi-und-Oli_BachataSensual'
 							/>
 						</div>
+					</div>
+
+					<div className='text-justify mx-auto grid gap-y-1 md:grid-cols-3 md:gap-x-3 my-4'>
+						{bachata.map((b) => (
+							<Accordion
+								key={b.id}
+								title={b.name}
+								content={b.description}
+								styling='bg-gray-100 rounded-lg'
+							/>
+						))}
 					</div>
 
 					<div className='max-w-[1024px] bg-white'>

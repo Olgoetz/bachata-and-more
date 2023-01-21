@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from "next/legacy/image";
+import Image from 'next/legacy/image';
 import Link from 'next/link';
 import ContactImg from '../public/images/MichiyOli_contact2.webp';
 import { useEffect } from 'react';
@@ -8,7 +8,7 @@ const Custom404 = () => {
 	const router = useRouter();
 	useEffect(() => {
 		setTimeout(() => router.push('/'), 4000);
-	}, []);
+	});
 	return (
 		<>
 			<div className='w-full bg-white pt-16 px-4'>

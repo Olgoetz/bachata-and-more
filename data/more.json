@@ -1,0 +1,34 @@
+[
+{
+    "id": 1,
+    "name": "Animal Flow",
+    "description": "Ein funktionelles Ganzkörpertraining. Es ist ein Konzept, das Bewegungen aus verschiedenen Körpergewichtstrainingsdisziplinen miteinander kombiniert und in einem übersichtlich strukturiertem System organisiert. Das Training findet ohne jegliche Hilfsmittel auf dem Boden statt. Der Fokus liegt auf einfache Bewegungen."
+},
+{
+    "id": 2,
+    "name": "Yoga",
+    "description": "Hier erlebst Du fließende und dynamische Asanas und Bewegungen, die zugleich kräftigend und entspannend wirken. Das Ganze zu passender Musik."
+    
+},
+{
+    "id": 3,
+    "name": "Mobility meets HIIT",
+    "description": "High-Intensity-Intervall-Training (HIIT) ist eine Form des Trainings zur maximalen Ausbelastung der Muskulatur, um größtmöglichen Trainingseffekt zu schaffen und vom Nachbrenneffekt zu profitieren. Losgelegt wird mit einer Aktivierung sowie Mobilisierung sämtlicher Gelenke. Im Anschluss folgen Übungen bzw. Übungsabfolgen, mit und ohne Hilfsmittel, welche durch kurze, intensive Belastungsphasen und lohnender Pause gekennzeichnet sind."
+},
+{
+    "id": 4,
+    "name": "Dance",
+    "description": "In diesem Kurs verbinden sich die klassischen Schritte des Aerobic mit verschiedenen Tanzstilen, wie Jazz, House und Hip-Hop und verschmelzen so zu einer genial fließenden Choreographie, die dank ihres durchdachten Aufbaus für jeden leicht zu erlernen ist."
+},
+{
+    "id": 5,
+    "name": "Happy Hips",
+    "description": "Eine gut ausgeprägte Hüftmobilität bzw. -beweglichkeit ist essentiell für das perfekte Durchführen z. B. Kniebeugen. Leider trägt die typische Schreibtisch-Sitzposition nicht positiv zu einer Hüftmobilität. Bei sitzender Tätigkeit verkümmert der Hüftbeuger, die Gesäßmuskulatur erschlafft und die eigentliche Funktion der Hüfte wird “deaktiviert”. In dieser Einheit werden diverse Übungen, um die Beweglichkeit sowie Mobilität in der Hüfte nachhaltig zu verbessern, ausgeführt. Die Übungen werden sukzessive erarbeitet und zu einem kleinen Flow zusammengestellt."
+},
+{
+    "id": 6,
+    "name": "Yoga meets Animal Flow",
+    "description": "In diesem konditionell sowie koordinativ anspruchsvollen Kurs werden Elemente aus dem Yoga und Animal Flow verbunden. Die Übungen werden Schritt für Schritt erarbeitet, wiederholt und schlussendlich kombiniert. Das Ergebnis ist ein harmonischer Flow zu passender Musik, welcher zwei Konzepte vereint."
+}
+
+]

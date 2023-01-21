@@ -2,7 +2,7 @@ import React from 'react';
 import { MdDateRange } from 'react-icons/md';
 import { GrLocation } from 'react-icons/gr';
 import Image from 'next/image';
-import styles from './EventItem.module.css';
+
 const EventItem = ({ image, title, venue, date, address, bookingLink }) => {
 	const formatedAddress = address.replace(', ', '\n');
 

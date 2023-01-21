@@ -7,13 +7,14 @@ import More from '../components/content/More';
 
 import events from '../data/events.json';
 import videos from '../data/videos.json';
-
+import bachata from '../data/bachata.json';
+import more from '../data/more.json';
 function Home() {
 	return (
 		<>
 			<Hero />
-			<Bachata videos={videos} />
-			<More />
+			<Bachata videos={videos} bachata={bachata} />
+			<More classes={more} />
 			<Events events={events} />
 			<Contact />
 			<AboutUs />
