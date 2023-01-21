@@ -42,7 +42,7 @@ const Contact = () => {
 			sourceAddress: process.env.EMAIL_SOURCE_ADDRESS,
 			subject: `Neue Nachricht von ${data.firstName}`,
 			message: emailBody,
-			recipients: ['oli@bachata-and-more.de'],
+			recipients: process.env.EMAIL_RECIPIENT_ADDRESSES,
 		};
 		setIsLoading(true);
 		const response = await sendEmail(email);
