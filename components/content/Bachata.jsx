@@ -2,16 +2,12 @@ import MichiYOli from '../../public/images/MichiyOli_bachata.webp';
 import React from 'react';
 import Image from 'next/legacy/image';
 //import Videos from './videos/Videos';
-import ReactPlayer from 'react-player';
+//import ReactPlayer from 'react-player';
+import dynamic from 'next/dynamic';
+const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
 import { useState, useEffect } from 'react';
 import Accordion from '../ui/Accordion';
 const Bachata = ({ videos, bachata }) => {
-	const [hasWindow, setHasWindow] = useState(false);
-	useEffect(() => {
-		if (typeof window !== 'undefined') {
-			setHasWindow(true);
-		}
-	}, []);
 	return (
 		<>
 			<div id='bachata' className='w-full bg-white py-16 px-4'>
@@ -70,15 +66,13 @@ const Bachata = ({ videos, bachata }) => {
 										<h5 className='font-bold text-center text-orange-400 uppercase my-2'>
 											{video.title}
 										</h5>
-										{hasWindow && (
-											<ReactPlayer
-												width='100%'
-												height='100%'
-												controls
-												playsinline
-												url={video.hlsUrl}
-											/>
-										)}
+										<ReactPlayer
+											width='100%'
+											height='100%'
+											controls
+											playsinline
+											url={video.hlsUrl}
+										/>
 									</div>
 								</div>
 							))}
