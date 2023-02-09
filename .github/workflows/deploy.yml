@@ -19,7 +19,7 @@ jobs:
           node-version: '19.x'
       
       - name: Install dependencies
-        run: yarn add
+        run: yarn install
 
       - name: Build the app
         run: yarn build --if-present
