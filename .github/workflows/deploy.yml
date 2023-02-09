@@ -51,4 +51,4 @@ jobs:
           username: github-actions
           password: ${{ secrets.NETCUP_FTP }}
           local-dir: ./out/error-page/
-          server-dir: /error_docs/not_found.html
+          server-dir: /error_docs/
