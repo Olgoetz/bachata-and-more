@@ -39,6 +39,10 @@ jobs:
           local-dir: ./out/
           server-dir: /bachata-and-more.de/httpdocs/
 
+      - name: Create error folder
+        run: | 
+            mkdir -p ./out/error-page
+            mv ./out/404.html ./out/error-page
 
       - name: 📂 Upload error page
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
@@ -46,5 +50,5 @@ jobs:
           server: ae8be.netcup.net
           username: github-actions
           password: ${{ secrets.NETCUP_FTP }}
-          local-dir: ./out/404.html
+          local-dir: ./out/error-page
           server-dir: /error_docs/not_found.html
