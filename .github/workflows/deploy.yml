@@ -50,5 +50,5 @@ jobs:
           server: ae8be.netcup.net
           username: github-actions
           password: ${{ secrets.NETCUP_FTP }}
-          local-dir: ./out/error-page
+          local-dir: ./out/error-page/
           server-dir: /error_docs/not_found.html
