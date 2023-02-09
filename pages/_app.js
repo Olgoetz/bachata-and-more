@@ -1,19 +1,13 @@
-<<<<<<< HEAD
-import Head from 'next/head';
-=======
 
->>>>>>> optimizing
+
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 import '../styles/globals.css';
 
 import { Raleway } from '@next/font/google';
-<<<<<<< HEAD
-
-=======
 import {DefaultSeo} from 'next-seo';
 import SEO from '../next-seo.config';
->>>>>>> optimizing
+
 const raleway = Raleway({
 	subsets: ['latin'],
 	display: 'swap',
@@ -22,35 +16,8 @@ const raleway = Raleway({
 
 function MyApp({ Component, pageProps }) {
 	return (
-		<>
-<<<<<<< HEAD
-			<Head>
-				<title>Bachata and More</title>
-				<meta
-					name='description'
-					content='Workout-, Yoga- sowie Bachatakurse als Event'
-				/>
-				<meta name='viewport' content='width=device-width, initial-scale=1.0' />
-				<meta property='og:title' content='Bachata & More' />
-				<meta property='og:url' content='https://www.bachata-and-more.de' />
-				<meta
-					property='og:description'
-					content='Workout-, Yoga- sowie Bachatakurse für Events'
-				/>
-				<meta property='og:type' content='image/png' />
-				<meta
-					property='og:image'
-					content='https://bachata-and-more.s3.eu-central-1.amazonaws.com/pictures/MichiyOli_hero.png'
-				/>
-				<meta property='og:image:width' content='1200' />
-
-				<meta property='og:image:height' content='630' />
-				<meta property='og:locale' content='de_DE' />
-			</Head>
-=======
-			
+		<>		
 			<DefaultSeo {...SEO} />
->>>>>>> optimizing
 			<main className={`${raleway.variable} font-sans`}>
 				<Navbar />
 				<Component {...pageProps} />
