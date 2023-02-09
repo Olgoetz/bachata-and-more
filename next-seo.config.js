@@ -1,6 +1,6 @@
 export default {
     title: 'Bachata and More',
-    description: 'Eventkonzept für Workout-, Yoga- und Bachatakurse',
+    description: 'Eventkonzept für Bachata, Body & Mind and Workout',
     openGraph: {
       type: 'website',
       locale: 'de_IE',
@@ -9,7 +9,7 @@ export default {
       images: [
         {
           url: 'https://bachata-and-more.s3.eu-central-1.amazonaws.com/pictures/MichiyOli_hero.png',
-          width: 800,
+          width: 1000,
           height: 600,
           alt: 'Bachata and More',
         },
