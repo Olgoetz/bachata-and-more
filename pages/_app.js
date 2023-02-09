@@ -1,10 +1,19 @@
+<<<<<<< HEAD
 import Head from 'next/head';
+=======
+
+>>>>>>> optimizing
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 import '../styles/globals.css';
 
 import { Raleway } from '@next/font/google';
+<<<<<<< HEAD
 
+=======
+import {DefaultSeo} from 'next-seo';
+import SEO from '../next-seo.config';
+>>>>>>> optimizing
 const raleway = Raleway({
 	subsets: ['latin'],
 	display: 'swap',
@@ -14,6 +23,7 @@ const raleway = Raleway({
 function MyApp({ Component, pageProps }) {
 	return (
 		<>
+<<<<<<< HEAD
 			<Head>
 				<title>Bachata and More</title>
 				<meta
@@ -37,6 +47,10 @@ function MyApp({ Component, pageProps }) {
 				<meta property='og:image:height' content='630' />
 				<meta property='og:locale' content='de_DE' />
 			</Head>
+=======
+			
+			<DefaultSeo {...SEO} />
+>>>>>>> optimizing
 			<main className={`${raleway.variable} font-sans`}>
 				<Navbar />
 				<Component {...pageProps} />
