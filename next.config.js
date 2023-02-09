@@ -11,4 +11,10 @@ module.exports = {
 		EMAIL_API_ENDPOINT:
 			'https://19l17oesb8.execute-api.eu-central-1.amazonaws.com/prod/email',
 	},
+	exportPathMap: async function () {
+		return {
+		  '/': { page: '/' },
+		  '/404': { page: '/404' },
+		}
+	  },
 };
