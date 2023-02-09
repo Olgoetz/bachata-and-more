@@ -22,7 +22,7 @@ jobs:
         run: yarn install
 
       - name: Build the app
-        run: yarn build --if-present
+        run: yarn build
 
       - name: Generate sitemap
         run: yarn postbuild
