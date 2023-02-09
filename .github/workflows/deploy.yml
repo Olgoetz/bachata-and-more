@@ -19,16 +19,16 @@ jobs:
           node-version: '19.x'
       
       - name: Install dependencies
-        run: npm install --save --force
+        run: yarn add
 
       - name: Build the app
-        run: npm run build --if-present
+        run: yarn build --if-present
 
       - name: Generate sitemap
-        run: npm run postbuild
+        run: yarn postbuild
 
       - name: Export static files
-        run: npm run export
+        run: yarn export
 
       - name: 📂 Upload files
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
