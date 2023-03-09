@@ -1,17 +1,18 @@
 export default {
     title: 'Bachata and More',
-    description: 'Eventkonzept für Bachata, Body & Mind and Workout',
+    description: 'Bachata Sensual with Michaela and Oliver',
     openGraph: {
       type: 'website',
       locale: 'de_IE',
-      url: 'https://www.bachata-and-more.de',
+      url: 'https://somabay.bachata-and-more.de',
       siteName: 'Bachata and More',
       images: [
         {
-          url: 'https://bachata-and-more.s3.eu-central-1.amazonaws.com/pictures/MichiyOli_hero.png',
-          width: 1000,
-          height: 600,
+          url: 'images/MichiyOli_hero.png',
+          width: 1200,
+          height: 630,
           alt: 'Bachata and More',
+          type: "image/png",
         },
       ],
     },
