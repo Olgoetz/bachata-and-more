@@ -11,8 +11,8 @@ const Hero = () => {
 				<div className='flex space-x-3 h-screen items-center justify-center text-center text-white bg-center bg-cover bg-[url(../public/images/MichiyOli_hero.webp)]'>
 					<div className='max-w-[400px] mx-auto bg-gray-900/50 p-4 '>
 						<h1 className='md:text-5xl text-2xl text-orange-400'>Bachata Sensual </h1>
-						<p className='md:text-3xl text-l'>with Michaela and Oliver </p>
-					
+						<p className='md:text-2xl text-lg mb-3'>with Michaela and Oliver </p>
+					<DownloadConceptButton/>
 					</div>
 				</div>
 				{/* <img
