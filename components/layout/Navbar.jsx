@@ -31,7 +31,7 @@ const Navbar = () => {
 					: 'fixed w-full px-2 h-20 z-[100] bg-black md:text-white'
 			}
 		>
-			<div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
+			<div className='flex justify-between items-center w-full h-full px-2'>
 				<Link href='/'>
 					<h1 className='block text-3xl font-bold text-orange-400'>
 						Bachata&More.
