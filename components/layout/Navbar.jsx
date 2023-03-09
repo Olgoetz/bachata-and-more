@@ -47,16 +47,10 @@ const Navbar = () => {
 							<Link href='/#bachata'>Bachata</Link>
 						</li>
 						<li className='ml-10 text-sm  hover:border-b'>
-							<Link href='/#more'>More</Link>
-						</li>
-						<li className='ml-10 text-sm  hover:border-b'>
-							<Link href='/#events'>Events</Link>
-						</li>
-						<li className='ml-10 text-sm  hover:border-b'>
-							<Link href='/#contact'>Kontakt</Link>
+							<Link href='/#contact'>Contact</Link>
 						</li>
 						<li className='ml-10 text-sm  hover:border-b whitespace-nowrap'>
-							<Link href='/#aboutus'>Über uns</Link>
+							<Link href='/#aboutus'>About Us</Link>
 						</li>
 					</ul>
 
@@ -95,25 +89,7 @@ const Navbar = () => {
 											</li>
 										</Link>
 
-										<Link href='/#more' >
-											<li
-												onClick={() => setNav(false)}
-												className='py-4 border-b'
-
-											>
-												More
-											</li>
-										</Link>
-
-										<Link href='/#events' >
-											<li
-												onClick={() => setNav(false)}
-												className='py-4 border-b'
-
-											>
-												Events
-											</li>
-										</Link>
+									
 
 										<Link href='/#contact' >
 											<li
@@ -121,7 +97,7 @@ const Navbar = () => {
 												className='py-4  border-b'
 
 											>
-												Kontakt
+												Contact
 											</li>
 										</Link>
 
@@ -131,7 +107,7 @@ const Navbar = () => {
 												className='py-4 whitespace-nowrap border-b'
 
 											>
-												Über uns
+												About Us
 											</li>
 										</Link>
 									</ul>

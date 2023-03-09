@@ -51,18 +51,18 @@ const Contact = () => {
 		if ('error' in response['result']['emailApiResponse']) {
 			setSubmitStatus({
 				status: 500,
-				message: 'Etwas ist schief gelaufen. Versuche es nochmal!',
+				message: 'Someting went wrong. Please try again!!',
 			});
 		}
 		if (response.statusCode != 200) {
 			setSubmitStatus({
 				status: response.statusCode,
-				message: 'Etwas ist schief gelaufen. Versuche es nochmal!',
+				message: 'Someting went wrong. Please try again!!',
 			});
 		} else {
 			setSubmitStatus({
 				status: response.statusCode,
-				message: 'Nachricht verschickt',
+				message: 'Message sent',
 			});
 		}
 
@@ -76,10 +76,10 @@ const Contact = () => {
 						name='contact'
 						className='text-xl uppercase font-bold text-orange-400'
 					>
-						Kontakt
+						Contact
 					</p>
 					<h1 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2 text-white'>
-						Schreibt uns für Anfragen
+						Write us for more information
 					</h1>
 					<div className='grid md:grid-cols-2 md:gap-x-4'>
 						<div className='my-4'>
@@ -99,14 +99,14 @@ const Contact = () => {
 									htmlFor='lastname'
 									className='uppercase font-bold text-white'
 								>
-									Name
+									Last Name
 								</label>
 								<input
 									id='lastname'
 									name='lastName'
 									type='text'
 									{...register('lastName', {
-										required: 'Nachname wird benötigt',
+										required: 'Lastname required',
 									})}
 									className='bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline'
 								/>
@@ -121,14 +121,14 @@ const Contact = () => {
 									htmlFor='firstName'
 									className='uppercase font-bold text-white'
 								>
-									Vorname
+									First name
 								</label>
 								<input
 									id='firstName'
 									name='firstName'
 									type='text'
 									{...register('firstName', {
-										required: 'Vorname wird benötigt',
+										required: 'Firstname required',
 									})}
 									className='bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline'
 								/>
@@ -143,18 +143,18 @@ const Contact = () => {
 									htmlFor='email'
 									className='uppercase font-bold text-white'
 								>
-									Email-Adresse
+									Email address
 								</label>
 								<input
 									id='email'
 									name='email'
 									type='text'
 									{...register('email', {
-										required: 'Email Adresse wird benötigt',
+										required: 'Email address required',
 										pattern: {
 											value:
 												/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-											message: 'Eine gültige Email Adresse wird benötigt',
+											message: 'A valid email address is required',
 										},
 									})}
 									//value={inputs.email}
@@ -172,13 +172,13 @@ const Contact = () => {
 									htmlFor='message'
 									className='uppercase font-bold text-white'
 								>
-									Nachricht
+									Message
 								</label>
 								<textarea
 									id='message'
 									name='message'
 									{...register('message', {
-										required: 'Nachricht darf nicht leer sein',
+										required: 'Message must not be empty',
 									})}
 									//value={inputs.message}
 									//onChange={handleChange}
@@ -197,7 +197,7 @@ const Contact = () => {
 								className='flex mt-2 py-3 flex-col border rounded-lg w-full items-center text-white curser-pointer hover:bg-orange-300 active:bg-orange-500'
 								type='submit'
 							>
-								Abschicken
+								Send
 							</button>
 							{isLoading && (
 								<div className='w-full mt-1 flex flex-col items-center'>

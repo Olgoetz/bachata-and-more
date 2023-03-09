@@ -14,7 +14,7 @@ const Footer = () => {
 	}, []);
 
 	return (
-		<div className='w-full bg-black px-5 pt-5 pb-2'>
+		<div className='w-full bg-black px-5 pt-5 pb-5'>
 			<div className='max-w-[1024px] mx-auto'>
 				<div className='grid md:grid-cols-2 md:gap-x-3'>
 					<div className='flex flex-col justify-center'>
@@ -46,7 +46,7 @@ const Footer = () => {
 									info@bachata-and-more.de
 								</a>
 							</li>
-							<li className='flex items-center bg-[#C13584]'>
+							<li className='flex items-center'>
 								<AiOutlineInstagram size={25} className='mr-1' />
 								<a
 									href='https://www.instagram.com/michaela_suessbauer/'
@@ -72,9 +72,10 @@ const Footer = () => {
 						<DownloadConceptButton />
 					</div>
 				</div>
+{/* 
 				<div className='flex flex-col text-sm text-white pt-5'>
 					<div className='flex justify-center pb-3'>
-						{/* <span className='px-2'>|</span> */}
+				
 
 						<Link href='/impressum'>Impressum</Link>
 						<span className='mx-2'>|</span>
@@ -84,7 +85,8 @@ const Footer = () => {
 						<BiCopyright size={20} className='mr-1' />
 						<p>2022 - {currentDate} Michaela Süßbauer & Oliver Götz</p>
 					</div>
-				</div>
+				</div> */}
+
 			</div>
 		</div>
 	);

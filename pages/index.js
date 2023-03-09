@@ -14,8 +14,7 @@ function Home() {
 		<>
 			<Hero />
 			<Bachata videos={videos} bachata={bachata} />
-			<More classes={more} />
-			<Events events={events} />
+
 			<Contact />
 			<AboutUs />
 		</>
