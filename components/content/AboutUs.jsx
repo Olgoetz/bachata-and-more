@@ -16,8 +16,8 @@ const AboutUs = () => {
               <p>
                 <span className="font-bold">Michi & Oli </span>
                 got to know each other in 2018 in the ROBINSON Club Soma Bay.
-                From there on they held a couple of event in different ROBINSON
-                clubs. Since ever Michi is a passionate dance, Oli discovered
+                From there on they held a couple of events in different ROBINSON
+                clubs. Since ever Michi is a passionate dancer, Oli discovered
                 his passion with{" "}
                 <span className="font-bold text-orange-400">
                   Bachata Sensual
@@ -30,7 +30,7 @@ const AboutUs = () => {
                 Bachata stars. They significantly improved their technique,
                 musicality and their teaching style was inspired and influenced
                 as well. Michi & Oli&apos;s dance classes stand for: Simplicity, fun,
-                passion, success.
+                passion and fast success.
               </p>
             </div>
           </div>
