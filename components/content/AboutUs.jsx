@@ -29,7 +29,7 @@ const AboutUs = () => {
                 Switzerland, Italy, Netherlands and Poland with international
                 Bachata stars. They significantly improved their technique,
                 musicality and their teaching style was inspired and influenced
-                as well. Michi & Oli' dance classes stand for: Simplicity, fun,
+                as well. Michi & Oli&apos;s dance classes stand for: Simplicity, fun,
                 passion, success.
               </p>
             </div>
