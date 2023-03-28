@@ -46,7 +46,7 @@ const Footer = () => {
 									info@bachata-and-more.de
 								</a>
 							</li>
-							<li className='flex items-center bg-[#C13584]'>
+							<li className='flex items-center'>
 								<AiOutlineInstagram size={25} className='mr-1' />
 								<a
 									href='https://www.instagram.com/michaela_suessbauer/'
