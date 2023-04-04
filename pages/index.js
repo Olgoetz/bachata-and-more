@@ -1,5 +1,7 @@
 import AboutUs from '../components/content/AboutUs';
-import Bachata from '../components/content/Bachata';
+import Introduction from '../components/content/Introduction';
+import Teaser from '../components/ui/Teaser';
+import Videos from '../components/ui/Videos';
 import Contact from '../components/content/Contact';
 import Events from '../components/content/events/Events';
 import Hero from '../components/content/Hero';
@@ -13,7 +15,10 @@ function Home() {
 	return (
 		<>
 			<Hero />
-			<Bachata videos={videos} bachata={bachata} />
+			<Introduction bachata={bachata} />
+			<Teaser/>
+			<Videos videos={videos} />
+			
 			<More classes={more} />
 			<Events events={events} />
 			<Contact />
