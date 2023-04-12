@@ -10,7 +10,7 @@ const Bachata = ({ bachata }) => {
         <div className="max-w-[1024px] pt-8 mx-auto ">
           <div className="grid md:grid-cols-2 md:gap-x-3">
             <div className="flex flex-col justify-center">
-              <p className="text-xl uppercase font-bold text-orange-400">
+              <p className="text-xl uppercase font-bold text-[#FFC08E]">
                 BACHATA
               </p>
               <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold py-2">

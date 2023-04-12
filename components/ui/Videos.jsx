@@ -9,8 +9,8 @@ const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 const Videos = ({ videos }) => {
   return (
     <>
-      <div id="videos" className="w-full bg-white py-16 px-4">
-        <div className="max-w-[1024px] bg-white mx-auto">
+      <div id="videos" className="w-full bg-gray-100 py-16 px-4">
+        <div className="max-w-[1024px] mx-auto">
           <h3 className="md:text-4xl sm:text-3xl text-2xl font-bold py-2 my-3">
             Videos
           </h3>
@@ -18,7 +18,7 @@ const Videos = ({ videos }) => {
             {videos.map((video) => (
               <div key={video.hlsUrl} className="shadow-xl round-lg">
                 <div>
-                  <h5 className="font-bold text-center text-orange-400 uppercase my-2">
+                  <h5 className="font-bold text-center text-[#FFC08E] uppercase my-2">
                     {video.title}
                   </h5>
                   <ReactPlayer
