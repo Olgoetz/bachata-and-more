@@ -66,9 +66,9 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="flex flex-col my-4 w-full mx-auto justify-center">
+          {/* <div className="flex flex-col my-4 w-full mx-auto justify-center">
             <DownloadConceptButton />
-          </div>
+          </div> */}
         </div>
         <div className="flex flex-col text-sm text-white pt-5">
           <div className="flex justify-center pb-3">

@@ -20,9 +20,9 @@ const Hero = () => {
               className="md:text-4xl text-2xl uppercase border-none font-bold text-[#FFC08E]"
             />
 
-            <div className="mt-4">
+            {/* <div className="mt-4">
               <DownloadConceptButton />
-            </div>
+            </div> */}
           </div>
         </div>
         {/* <img
