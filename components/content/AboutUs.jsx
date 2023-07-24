@@ -4,7 +4,7 @@ const AboutUs = () => {
   return (
     <>
       <div id="aboutus" className="w-full bg-white py-16 px-4">
-        <div className="max-w-[1024px] py-8 mx-auto grid md:grid-cols-2 md:gap-x-4">
+        <div className="max-w-[1024px] py-10 mx-auto grid md:grid-cols-2 md:gap-x-4">
           <div className="flex flex-col justify-center">
             <p className="text-xl uppercase font-bold text-[#FFC08E]">
               Über uns

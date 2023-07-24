@@ -71,7 +71,7 @@ const Contact = () => {
   return (
     <>
       <div id="contact" className="w-full bg-black py-16 px-4">
-        <div className="max-w-[1024px] pt-8 mx-auto">
+        <div className="max-w-[1024px] pt-10 mx-auto">
           <p
             name="contact"
             className="text-xl uppercase font-bold text-[#FFC08E]"

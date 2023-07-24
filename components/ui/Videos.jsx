@@ -14,7 +14,7 @@ const Videos = ({ videos }) => {
           <h3 className="md:text-4xl sm:text-3xl text-2xl font-bold py-2 my-3">
             Videos
           </h3>
-          <div className="text-justify grid md:grid-cols-2 md:gap-x-3">
+          <div className="text-justify grid grid-cols-1 mx-auto max-w-[700px]">
             {videos.map((video) => (
               <div key={video.hlsUrl} className="shadow-xl round-lg">
                 <div>
