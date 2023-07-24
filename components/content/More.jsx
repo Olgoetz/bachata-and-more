@@ -62,7 +62,7 @@ const More = ({ classes }) => {
                 key={c.id}
                 title={c.name}
                 content={c.description}
-                styling="shadow-xl bg-gray-100 rounded-lg"
+                styling={`bg-${c.color} shadow-xl rounded-lg`}
               />
             ))}
             {/* End of grid */}
