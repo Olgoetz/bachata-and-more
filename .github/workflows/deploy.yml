@@ -2,13 +2,12 @@ name: Next deployment
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -16,8 +15,8 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '19.x'
-      
+          node-version: "19.x"
+
       - name: Install dependencies
         run: yarn install
 
@@ -26,9 +25,6 @@ jobs:
 
       - name: Generate sitemap
         run: yarn postbuild
-
-      - name: Export static files
-        run: yarn export
 
       - name: 📂 Upload files
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
@@ -40,9 +36,9 @@ jobs:
           server-dir: /bachata-and-more.de/httpdocs/
 
       - name: Create error folder
-        run: | 
-            mkdir -p ./out/error-page
-            mv ./out/404.html ./out/error-page/not-found.html
+        run: |
+          mkdir -p ./out/error-page
+          mv ./out/404.html ./out/error-page/not-found.html
 
       - name: 📂 Upload error page
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
