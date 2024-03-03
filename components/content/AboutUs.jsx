@@ -41,7 +41,7 @@ const AboutUs = () => {
               <p className="py-1">
                 <span className="font-bold"> Oli</span> ist über 10 Jahre im
                 Fitness Bereich tätig, absolvierte zahlreiche Ausbildungen (z.B.
-                HOT IRON©, Indoor Cycling, Deepwork, Animal Flow, Step &
+                HOT IRON®, Indoor Cycling, Deepwork, Animal Flow, Step &
                 Aerobic) und bildet regelmäßig für IFHIAS aus.
               </p>
               <p>
