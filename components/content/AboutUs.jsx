@@ -49,9 +49,9 @@ const AboutUs = () => {
                 im ROBINSON Club Soma Bay kennen. Nach dieser Zeit waren sie in
                 diversen Clubanlagen mit Events aktiv. Michi ist schon immer
                 eine leidenschaftliche Tänzerin, Oli entdeckte seine mit Bachata
-                &quot;Sensual&quot;. 2021 boten sie zum ersten mal, anfangs als
+                &quot;Sensual&quot;. 2021 boten sie zum ersten Mal, anfangs als
                 Experiment gedacht, einen Bachata Basic Kurs an. Der Kurs war
-                dermaßen erforlgeich, dass noch weitere folgten. Dies war die
+                dermaßen erfolgreich, dass noch weitere folgten. Dies war die
                 Geburtsstunde von
                 <span className="font-bold text-[#FFC08E]"> Bachata&More</span>.
               </p>
