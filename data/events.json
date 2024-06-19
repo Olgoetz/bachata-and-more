@@ -1,0 +1,39 @@
+[
+  {
+    "address": "Soma Bay km 48 Safaga Road P.O. Box 149, 84651 Hurghada (Ägypten)",
+    "bookingLink": "https://www.robinson.com/de/de/cluburlaub/aegypten/soma-bay/detailseite/",
+    "date": "16.03 - 24.03.2024",
+    "id": "1",
+    "image": "https://www.robinson.com/media/_processed_/c/5/csm_sm96__7320_5c03d9b8f6.jpg",
+    "title": "Stretch Your Mind",
+    "venue": "ROBINSON Soma Bay"
+  },
+  {
+    "address": "Soma Bay km 48 Safaga Road P.O. Box 149, 84651 Hurghada (Ägypten)",
+    "bookingLink": "https://www.robinson.com/de/de/aktivitaeten/events-top-events/event-landing-page-fallback/15869-latin-dance-week/",
+    "date": "02.06 - 09.06.2024",
+    "id": "2",
+    "image": "https://www.robinson.com/media/_processed_/c/5/csm_sm96__7320_5c03d9b8f6.jpg",
+    "title": "Latin Dance Week",
+    "venue": "ROBINSON Soma Bay"
+  },
+
+  {
+    "address": "Çamyuva No:2 Turizm Blv., 07980 Kemer/Antalya (Türkei)",
+    "bookingLink": "https://www.robinson.com/de/de/aktivitaeten/events-top-events/event-landing-page-fallback/15081-bachata-more/",
+    "date": "02.08 - 09.08.2024",
+    "id": "3",
+    "image": "https://www.robinson.com/media/_processed_/8/c/csm_cv41_13780_Hauptpool_ecc946438c.jpg",
+    "title": "Bachata & More",
+    "venue": "ROBINSON Camyuva"
+  },
+  {
+    "address": "Soma Bay km 48 Safaga Road P.O. Box 149, 84651 Hurghada (Ägypten)",
+    "bookingLink": "https://www.robinson.com/de/de/cluburlaub/aegypten/soma-bay/detailseite/",
+    "date": "22.10 - 31.10.2024",
+    "id": "4",
+    "image": "https://www.robinson.com/media/_processed_/c/5/csm_sm96__7320_5c03d9b8f6.jpg",
+    "title": "Bachata & More",
+    "venue": "ROBINSON Soma Bay"
+  }
+]
