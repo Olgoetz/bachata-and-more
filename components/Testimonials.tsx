@@ -6,12 +6,12 @@ function Testimonials() {
       <div className="container px-4 mx-auto">
         <h2 className="text-5xl text-bm-main font-bold">Stimmen</h2>
 
-        <div className="carousel max-w-[800px] py-10">
+        <div className="carousel max-w-[800px] py-10 mx-auto">
           <div
             id="slide1"
-            className="carousel-item relative flex justify-between items-center w-full"
+            className="carousel-item relative flex flex-col justify-center items-center w-full"
           >
-            <blockquote className="text-xl px-20 text-center italic font-semibold text-black ">
+            <blockquote className="text-xl px-20 text-center italic font-semibold text-black max-w-[600px]">
               <p>
                 "Flowbite is just awesome. It contains tons of predesigned
                 components and pages starting from login screen to complex
