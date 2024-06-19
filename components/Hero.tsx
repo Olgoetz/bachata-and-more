@@ -26,6 +26,7 @@ const Hero = () => {
           alt="Bachata and More - Background Image"
           quality={100}
           fill
+          priority
           sizes="100vw"
           className="object-cover hidden md:block"
         />
@@ -34,6 +35,7 @@ const Hero = () => {
           alt="Bachata and More - Background Image"
           quality={100}
           fill
+          priority
           sizes="100vw"
           className="object-cover block md:hidden"
         />

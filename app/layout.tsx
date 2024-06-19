@@ -5,8 +5,7 @@ import "./globals.css";
 import { Chivo } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-// import ScrollToTopButton from "../components/ui/scroll-to-top-button";
-
+import ScrollToTopButton from "@/components/scroll-to-top-button";
 export const metadata: Metadata = {
   title: "Bachata and More",
   description: "Eventkonzept für Bachata, Body & Mind and Workout",
@@ -27,7 +26,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
-        {/* <ScrollToTopButton /> */}
+        <ScrollToTopButton />
       </body>
     </html>
   );
