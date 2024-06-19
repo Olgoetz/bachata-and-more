@@ -13,9 +13,9 @@ function Testimonials() {
           >
             <blockquote className="text-xl px-20 text-center italic font-semibold text-black max-w-[600px]">
               <p>
-                "Flowbite is just awesome. It contains tons of predesigned
+                &quot;Flowbite is just awesome. It contains tons of predesigned
                 components and pages starting from login screen to complex
-                dashboard. Perfect choice for your next SaaS application."
+                dashboard. Perfect choice for your next SaaS application.&quot;
               </p>
             </blockquote>
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">

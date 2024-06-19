@@ -38,8 +38,8 @@ function Bachata() {
               ursprünglich aus der Dominikanischen Republik und hat mittlerweile
               eine sehr große Community in Europa. Es gibt verschiedene Formen
               des Bachatas. Wir fokussieren uns auf den Stil{" "}
-              <strong>"Bachata Sensual"</strong>. Dieser ist geprägt von
-              tendenziell langsamerer Musik und somit einfach zu Erlernen.
+              <strong>&quot;Bachata Sensual&quot;</strong>. Dieser ist geprägt
+              von tendenziell langsamerer Musik und somit einfach zu Erlernen.
               Sinnlichkeit und Figuren wie Bodywaves oder Headrolls sind
               charakteristisch und betonen die Körperlichkeit von Mann und Frau.
             </p>
