@@ -19,10 +19,10 @@ export const navLinks: NavbarItem[] = [
     label: "Events",
     path: "/#events",
   },
-  {
-    label: "Stimmen",
-    path: "/#stimmen",
-  },
+  // {
+  //   label: "Stimmen",
+  //   path: "/#stimmen",
+  // },
   {
     label: "Kontakt",
     path: "/#kontakt",
