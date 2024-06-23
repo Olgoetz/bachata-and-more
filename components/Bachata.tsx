@@ -51,7 +51,7 @@ function Bachata() {
               Erlebe die Faszination der Bachata mit uns. Egal, ob Du Anfänger
               bist oder bereits erste Schritte kennst, unser Kurs bietet Dir die
               perfekte Gelegenheit, Deine Tanzfähigkeiten zu verbessern und vor
-              allem Spaß in einer Komplett ungezwungenen Atmosphäre zu haben.
+              allem Spaß in einer komplett ungezwungenen Atmosphäre zu haben.
               Komm vorbei und lass Dich von der Musik und den Bewegungen
               mitreißen. Wir freuen uns darauf, gemeinsam mit Dir zu tanzen!
             </p>
