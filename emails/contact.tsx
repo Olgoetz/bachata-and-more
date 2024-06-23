@@ -13,8 +13,9 @@ import {
 
 import * as React from "react";
 
-const baseUrl =
-  process.env.NEXT_PUBLIC_VERCEL_URL || "http://localhost:4000/static";
+const baseUrl = process.env.VERCEL_URL
+  ? `https://${process.env.VERCEL_URL}`
+  : "/static";
 
 export default function ContactFormEmail({
   name,
@@ -28,7 +29,7 @@ export default function ContactFormEmail({
           <Container className="rounded-lg bp-4">
             <Img
               src={`${baseUrl}/logo.png`}
-              alt="Bachata & More"
+              alt="Bachata and More"
               width="100"
               height="100"
               className="mx-auto my-4"
@@ -38,9 +39,7 @@ export default function ContactFormEmail({
 
             <h1 className="py-4 text-2xl">Hi Michi und Oli,</h1>
 
-            <Text>
-              Eine neue Nachricht kam gerade über das Kontakformular herein:
-            </Text>
+            <Text>Eine neue Nachricht von {name}:</Text>
 
             <Section className="space-y-4 py-4">
               <Text>Name: {name}</Text>

@@ -108,6 +108,7 @@ function Contact() {
                 </div>
                 <textarea
                   className="textarea textarea-bordered text-white h-24"
+                  style={{ fontSize: "1rem" }}
                   name="message"
                   placeholder="Nachricht"
                 ></textarea>

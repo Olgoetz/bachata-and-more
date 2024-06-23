@@ -39,7 +39,9 @@ export async function sendEmail(prevState: any, formData: FormData) {
       from: "Bachata & More <no-reply@dev.goetz-oliver.de>",
       to: "dev.goetzoliver89@gmail.com",
       subject: "Neue Nachricht von Bachata & More",
-      react: ContactFormEmail({ ...zodResult.data }),
+      react: ContactFormEmail({
+        ...zodResult.data,
+      }),
     });
 
     if (error) {
