@@ -80,7 +80,7 @@ const EventItem = ({
             checkIfDateIsInPast(date) && "pointer-events-none bg-slate-300"
           )}
         >
-          Buchen
+          {checkIfDateIsInPast(date) ? "Nicht mehr buchbar" : "Buchen"}
         </Link>
       </div>
     </li>

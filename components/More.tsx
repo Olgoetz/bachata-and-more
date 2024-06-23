@@ -10,31 +10,16 @@ const moreOffer = [
     label: "Workout",
     img: workout,
     alt: "Bachata and More - Workout",
-    content: [
-      "Hight-Intensity-Intervall-Training (HIIT)",
-      "Athletic Training",
-      "Kraftausdauertraining mit/ohne Hilfsmittel",
-    ],
   },
   {
     label: "Dance",
     img: dance,
     alt: "Bachata and More - Dance",
-    content: [
-      "Motto Stunden: 80er, 90er sowie HipHop",
-      "Einfache Choreographien",
-      "Cardiotraining",
-    ],
   },
   {
     label: "Body & Mind",
     img: bm,
     alt: "Bachata and More - Body & Mind",
-    content: [
-      "Yoga Flow",
-      "Sinnvoller Aufbau der Asanas",
-      "Mobility- und Beweglichkeitstraining",
-    ],
   },
 ];
 
@@ -122,11 +107,6 @@ function More() {
               <Image src={e.img} alt={e.alt} />
               <div className="card-body items-center text-center">
                 <h2 className="card-title">{e.label}</h2>
-                <ul>
-                  {e.content.map((c) => (
-                    <li key={c}>{c}</li>
-                  ))}
-                </ul>
               </div>
             </div>
           ))}

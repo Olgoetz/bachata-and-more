@@ -6,6 +6,7 @@ import Events from "@/components/Events";
 import Contact from "@/components/Contact";
 import AboutUs from "@/components/AboutUs";
 import Testimonials from "@/components/Testimonials";
+
 export default function Home() {
   return (
     <main>

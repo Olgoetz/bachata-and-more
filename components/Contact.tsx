@@ -143,7 +143,7 @@ function Contact() {
             </div>
           </form>
           {showToast && (
-            <div className="toast z-[10000]">
+            <div className="toast z-[100000]">
               <div
                 className={clsx(
                   "alert",

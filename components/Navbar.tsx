@@ -51,7 +51,7 @@ function Navbar() {
           </div>
           <div className="flex-1 justify-end md:justify-start px-2 mx-2">
             <Link href="/">
-              <Image src={logo} alt="Bachata & More" width={80} height={1} />
+              <Image src={logo} alt="Bachata & More" width={80} height={80} />
             </Link>
           </div>
           <div className="flex-none hidden lg:block">
