@@ -26,7 +26,7 @@ export default function ContactFormEmail({
     <Html>
       <Tailwind>
         <Body className="font-sans max-w-[800px] my-4 mx-auto  border-solid border-black/5 ">
-          <Container className="rounded-lg bp-4">
+          <Container className="rounded-lg p-4">
             <Img
               src={`${baseUrl}/logo.png`}
               alt="Bachata and More"

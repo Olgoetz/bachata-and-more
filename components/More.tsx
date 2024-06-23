@@ -26,13 +26,13 @@ const moreOffer = [
 const courseDetailsWorkout = [
   {
     label: "Animal Flow",
-    description:
-      "Ein funktionelles Ganzkörpertraining. Es ist ein Konzept, das Bewegungen aus verschiedenen Körpergewichtstrainingsdisziplinen miteinander kombiniert und in einem übersichtlich strukturiertem System organisiert. Das Training findet ohne jegliche Hilfsmittel auf dem Boden statt. Der Fokus liegt auf einfache Bewegungen.",
+    description: `Animal Flow is funktionelles, bodengebundenes Ganzköpertraining, das Spaß macht, herausfordernd und effektiv ist. Dieses System wurde entwickelt, um Kraft, Leistung, Flexibilität, Mobilität und Koordination für alle Fitnessbegeisterten zu verbessern.
+    Ganz gleich, ob Du alleine trainieren, mit einem Profi trainieren oder an Gruppenkursen teilnehmen möchtest, Animal Flow bietet etwas für jeden Körper!`,
   },
   {
     label: "BAM",
-    description:
-      "Body Atletic Moves - Athletische Cardio- und Kraftübungen werden sinnvoll in eine Übungsabfolge integriert.",
+    description: `Entdecke BAM - Body Athletic Move, das ultimative Workout für Kraftausdauer, Cardio und Mobilität! Abwechslungsreiche funktionale Kräftigungs- und Ausdauerübungen im Stand und am Boden garantieren nicht nur ein intensives Training, sondern auch jede Menge Spaß. Begleitet von energiegeladener Musik führt dich Michaela, durch dieses dynamische Workout. Die Übungen werden zu einer FUNctional Choreografie zusammengesetzt, die nicht nur deinen Körper, sondern auch Dein Hirn trainiert. 
+      Erlebe den ultimativen Kick von BAM – Fitness war noch nie so mitreißend und gleichzeitig geistig anregend!`,
   },
   {
     label: "365",
@@ -41,8 +41,10 @@ const courseDetailsWorkout = [
   },
   {
     label: "HOT IRON®",
-    description:
-      "Das Langhantel-System für die richtigen Formen an den richtigen Stellen. HOT IRON® ist für jeden geeignet, der seinen Körper formen, straffen und schützen möchte. HOT IRON® formt Deine Muskeln an all den richtigen Stellen. Nutze den Kurs als „Booty-Builder“, als „Back-Protector“ oder für andere individuelle Ziele! 3 unterschiedliche Ganzkörper-Kurse mit unterschiedlichen, synergistischen Trainingsreizen geben Deinem Körper und Geist dabei die benötigte Abwechslung, um mit Spaß und Motivation in die beste Form Deines Lebens zu kommen.",
+    description: `Das Langhantel-System für die richtigen Formen an den richtigen Stellen - HOT IRON® ist für jeden geeignet, der seinen Körper formen, straffen und schützen möchte. HOT IRON® formt Deine Muskeln an all den richtigen Stellen. 
+    Nutze den Kurs als „Booty-Builder“, als „Back-Protector“ oder für andere individuelle Ziele!
+      
+      3 unterschiedliche Ganzkörper-Kurse mit unterschiedlichen, synergistischen Trainingsreizen geben Deinem Körper und Geist dabei die benötigte Abwechslung, um mit Spaß und Motivation in die beste Form Deines Lebens zu kommen.`,
   },
   {
     label: "Mobility meets HIIT",
@@ -59,15 +61,15 @@ const courseDetailsDance = [
   },
   {
     label: "Motto Dance",
-    description:
-      "Bei Motto Dance wird zu klassischer Musik bspw. aus den 80er oder 90er getanzt. Mit einfachen Schritten entsteht eine ganze Choreographie, die für jeden leicht zu erlernen ist. Kostüme sind herzlich willkommen.",
+    description: `Motto Dance Partys - 80er, 90er, Latin - egal welche Musik diese Stunde begleitet, hier steht der Spaß im Vordergrund!
+Einfache Schrittkombinationen und verschiedene Level sorgen dafür, dass vom Anfänger bis zum Fortgeschrittenen jeder Freude am Tanzen hat. Mundwinkel nach oben und let’s shake it!`,
   },
 ];
-const courseBM = [
+const courseDetailsBM = [
   {
-    label: "Yoga",
-    description:
-      "Hier erlebst Du fließende und dynamische Asanas und Bewegungen, die zugleich kräftigend und entspannend wirken. Das Ganze zu passender Musik.",
+    label: "Feelgood Yoga/Mobility Flow",
+    description: `Genieße eine belebende Yoga-Mobility- Session, die Körper und Geist entspannt aber auch gleichzeitig stärkt. Ein harmonischer Flow, der Deine Energien freisetzt und ein wohliges Gefühl der Ausgeglichenheit hinterlässt.
+      Für jedes Level auch absolute Yoga Beginner sind herzlich willkommen`,
   },
   {
     label: "Yoga meets Animal Flow",
@@ -76,13 +78,18 @@ const courseBM = [
   },
   {
     label: "DAYO",
-    description:
-      "Dance Yoga ist für den Geist und die Seele - Vermischung von Yoga Asanas und einfachen Tanzschritten zu einer wunderschönen Choreographie.",
+    description: `Kopf aus Herz an! Ruhige fliessende Bewegungen, die dich zum fühlen zurück bringen. Perfektion weg, Leistungsdruck weg und fühlen was das Zeug hält, vor allem sich (gut) fühlen. Einfach mal machen - könnte ja gut werden!
+Für diese Stunde brauchst Du weder Vorkenntnisse im Yoga noch im Tanz, hier kann jeder folgen!`,
+  },
+  {
+    label: "Happy Hips",
+    description: `Eine gut ausgeprägte Hüftmobilität bzw. -beweglichkeit ist essentiell für das perfekte Durchführen z. B. Kniebeugen. Leider trägt die typische Schreibtisch-Sitzposition nicht positiv zu einer Hüftmobilität. Bei sitzender Tätigkeit verkümmert der Hüftbeuger, die Gesäßmuskulatur erschlafft und die eigentliche Funktion der Hüfte wird “deaktiviert”. 
+    In dieser Einheit werden diverse Übungen, um die Beweglichkeit sowie Mobilität in der Hüfte nachhaltig zu verbessern, ausgeführt. Die Übungen werden sukzessive erarbeitet und zu einem kleinen Flow zusammengestellt.`,
   },
 ];
 function More() {
   return (
-    <div id="bachata" className="py-16 bg-black">
+    <div id="more" className="py-16 bg-black">
       <div className="container px-4 mx-auto">
         <h2 className="text-5xl text-bm-main font-bold">More</h2>
 
@@ -94,25 +101,98 @@ function More() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center items-center">
-          {/* <figure className="px-10 pt-10">
-              <img
-              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-              alt="Shoes"
-              className="rounded-xl"
-              />
-              </figure> */}
-          {moreOffer.map((e) => (
-            <div key={e.label} className="card w-full  bg-slate-200 shadow-xl">
-              <Image src={e.img} alt={e.alt} />
-              <div className="card-body items-center text-center">
-                <h2 className="card-title">{e.label}</h2>
-              </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center ">
+          <div className="card  bg-slate-200 shadow-xl">
+            <Image src={workout} alt="Bachata and More - Workout Angebot" />
+            <div className="card-body items-center text-center">
+              <h2 className="card-title">Workout</h2>
             </div>
-          ))}
+          </div>
+          <div className="flex flex-col justify-start h-full  gap-y-2">
+            {courseDetailsWorkout.map((e) => (
+              <div
+                key={e.label}
+                className="collapse collapse-plus bg-slate-200"
+              >
+                <input type="radio" name="my-accordion-1" />
+                <div className="collapse-title text-xl font-medium">
+                  {e.label}
+                </div>
+                <div className="collapse-content whitespace-pre-line">
+                  <p>{e.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
-        <div className="pt-14 ">
+        <div className="divider divider-neutral"></div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center">
+          <div className="card w-full  bg-slate-200 shadow-xl">
+            <Image src={dance} alt="Bachata and More - Dance Angebot" />
+            <div className="card-body items-center text-center">
+              <h2 className="card-title">Dance</h2>
+            </div>
+          </div>
+          <div className="flex flex-col justify-start h-full gap-y-2">
+            {courseDetailsDance.map((e) => (
+              <div
+                key={e.label}
+                className="collapse collapse-plus bg-slate-200"
+              >
+                <input type="radio" name="my-accordion-1" />
+                <div className="collapse-title text-xl font-medium">
+                  {e.label}
+                </div>
+                <div className="collapse-content whitespace-pre-line">
+                  <p>{e.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="divider divider-neutral"></div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center">
+          <div className="card w-full  bg-slate-200 shadow-xl">
+            {/* {moreOffer.map((e) => (
+              <div
+                key={e.label}
+                className="card w-full  bg-slate-200 shadow-xl"
+              >
+                <Image src={e.img} alt={e.alt} />
+                <div className="card-body items-center text-center">
+                  <h2 className="card-title">{e.label}</h2>
+                </div>
+              </div>
+            ))} */}
+
+            <Image src={bm} alt="Bachata and More - Body and Mind Angebot" />
+            <div className="card-body items-center text-center">
+              <h2 className="card-title">Body & Mind</h2>
+            </div>
+          </div>
+          <div className="flex flex-col justify-start h-full gap-y-2">
+            {courseDetailsBM.map((e) => (
+              <div
+                key={e.label}
+                className="collapse collapse-plus bg-slate-200"
+              >
+                <input type="radio" name="my-accordion-1" />
+                <div className="collapse-title text-xl font-medium">
+                  {e.label}
+                </div>
+                <div className="collapse-content whitespace-pre-line">
+                  <p>{e.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* <div className="pt-14 ">
           <div className="space-y-4">
             <h3 className="text-white text-4xl uppercase mb-6">Workout</h3>
             {courseDetailsWorkout.map((e) => (
@@ -120,11 +200,11 @@ function More() {
                 key={e.label}
                 className="collapse collapse-plus bg-slate-200"
               >
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="my-accordion-1" />
                 <div className="collapse-title text-xl font-medium">
                   {e.label}
                 </div>
-                <div className="collapse-content">
+                <div className="collapse-content whitespace-pre-line">
                   <p>{e.description}</p>
                 </div>
               </div>
@@ -140,11 +220,11 @@ function More() {
                 key={e.label}
                 className="collapse collapse-plus bg-slate-200"
               >
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="my-accordion-1" />
                 <div className="collapse-title text-xl font-medium">
                   {e.label}
                 </div>
-                <div className="collapse-content">
+                <div className="collapse-content whitespace-pre-line">
                   <p>{e.description}</p>
                 </div>
               </div>
@@ -160,17 +240,17 @@ function More() {
                 key={e.label}
                 className="collapse collapse-plus bg-slate-200"
               >
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="my-accordion-1" />
                 <div className="collapse-title text-xl font-medium">
                   {e.label}
                 </div>
-                <div className="collapse-content">
+                <div className="collapse-content whitespace-pre-line">
                   <p>{e.description}</p>
                 </div>
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
         {/* <div className="space-y-3">
           <div className="collapse collapse-plus bg-slate-50">
             <input type="radio" name="my-accordion-3" defaultChecked />

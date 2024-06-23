@@ -10,20 +10,24 @@ const bachataOffer = [
   {
     image: bachata2,
     label: "Kurs",
-    content:
-      "In einem Bachata Kurs werden verschiedene Bachata Schritte und Figuren erlernt, z.B. der Grundschritt, Damen- und Herrendrehung, Campio, Shadow-Position.",
+    content: `Möchtest Du die Leidenschaft und das Feuer des Bachata tanzen lernen? Dann bist Du bei uns genau richtig! In unserem Kurs tauchst Du ein in die Welt des Bachata und lernst erstmal die grundlegenden Schritte und Techniken dieses sinnlichen Tanzes. Wir beginnen mit den Basics – Schrittfolgen, Rhythmusgefühl und einfache Figuren. Ergänze Deine Schritte mit stilvollen Bewegungen und Techniken, um Deinen Tanz einzigartig zu machen. Egal, ob Du Anfänger bist oder schon Vorkenntnisse hast, unser Kurs bietet für jedes Niveau passende Herausforderungen. 
+    Du brauchst keinen festen Tanzpartner mitzubringen – wir wechseln regelmäßig die Partner, damit Du verschiedene Tanzstile und Techniken kennenlernst. Tanzen macht am meisten Spaß in einer freundlichen und unterstützenden Umgebung. 
+    
+    Bei uns findest Du beides!`,
   },
   {
     image: bachata3,
     label: "Sensual Nigth/Evening",
-    content:
-      "Sensual Evenings sind Übungsabende, in denen erlernte Schritte und Figuren angwendet werden. Den Abschluss des Events bildet eine 3-stündige Sensual Night zu den besten Bachata Beats. Jetzt wird es Zeit die Bachata Skills auf die Tanzfläche zu bringen. Partnerwechsel ist selbstverständlich möglich.",
+    content: `Sensual Evenings sind Übungsabende, in denen erlernte Schritte und Figuren angwendet werden. Den Abschluss des Events bildet eine Sensual Night zu den besten Bachata Beats. Jetzt wird es Zeit die Bachata Skills auf die Tanzfläche zu bringen. 
+      
+    Partnerwechsel ist selbstverständlich möglich und auch gewollt.`,
   },
   {
     image: bachata4,
     label: "Privat/Workshop",
-    content:
-      "In einer Privatstunde betreuen wir euch 1 zu 1. Sie geben euch wertvolle Tipps zur Technik, Haltung sowie zur Verbesserung eurer Musikalität. Desweiteren zeigen wir euch die oder andere etwas fortgeschrittenere Figur.",
+    content: `Möchtest Du Deine Bachata-Fähigkeiten gezielt und intensiv verbessern? Dann ist unsere private 1:1 Betreuungsstunde genau das Richtige für Dich! Hier gehen wir individuell auf Deine Bedürfnisse und Wünsche ein. Egal, ob Du an Deiner Technik arbeiten, neue Figuren lernen oder Dein Styling verbessern möchtest – wir richten uns ganz nach Deinen Zielen.
+      
+    Tanzen soll vor allem Spaß machen! Unsere privaten Stunden sind entspannt und motivierend, damit Du Dich wohlfühlst und Freude am Lernen hast.`,
   },
 ];
 function Bachata() {
@@ -40,18 +44,22 @@ function Bachata() {
               des Bachatas. Wir fokussieren uns auf den Stil{" "}
               <strong>&quot;Bachata Sensual&quot;</strong>. Dieser ist geprägt
               von tendenziell langsamerer Musik und somit einfach zu Erlernen.
-              Sinnlichkeit und Figuren wie Bodywaves oder Headrolls sind
-              charakteristisch und betonen die Körperlichkeit von Mann und Frau.
             </p>
             <p>
-              Wir möchten unsere Leidenschaft an euch weitergeben. Wir bieten
-              Bachatakurse inklusive täglicher Übungungsabende sowie einen
-              fulminanten 3-stündigen Abschlussabend an.
+              Wir möchten unsere große Leidenschaft unbedingt an euch
+              weitergeben und zeigen wieviel Spaß und Freude dieser Tanz bringt.
+              Erlebe die Faszination der Bachata mit uns. Egal, ob Du Anfänger
+              bist oder bereits erste Schritte kennst, unser Kurs bietet Dir die
+              perfekte Gelegenheit, Deine Tanzfähigkeiten zu verbessern und vor
+              allem Spaß in einer Komplett ungezwungenen Atmosphäre zu haben.
+              Komm vorbei und lass Dich von der Musik und den Bewegungen
+              mitreißen. Wir freuen uns darauf, gemeinsam mit Dir zu tanzen!
             </p>
           </div>
           <div className="hidden md:block relative h-full">
             <Image
               className="rounded-lg object-cover"
+              fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
               src={bachata}
               alt="Bachata Sensual - Oliver und Michaela"
@@ -71,7 +79,7 @@ function Bachata() {
               />
               <div className="card-body">
                 <h2 className="card-title">{e.label}</h2>
-                <p>{e.content}</p>
+                <p className="whitespace-pre-line">{e.content}</p>
               </div>
             </div>
           ))}

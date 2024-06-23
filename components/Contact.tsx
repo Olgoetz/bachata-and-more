@@ -137,7 +137,7 @@ function Contact() {
                   name="mathAnswer"
                   ref={mathAnswerRef}
                   onChange={handleMathAnswerChange}
-                  className="input input-bordered text-sm text-white w-20"
+                  className="input input-bordered  text-white w-24"
                 />
               </label>
               <SubmitButton spamProtection={isMathCorrect} />

@@ -9,10 +9,9 @@ function AboutUs() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-10">
           <div className="leading-10">
             <p className="">
-              <span className="font-bold">Michi</span> unterrichtet gut 20 Jahre
-              schon erfolgreich verschiedenste Kurse im Group Fitness Bereich in
-              namhaften Fitness Studios in München und ist als Personaltrainerin
-              tätig (
+              <span className="font-bold">Michi</span> ist seit über 20 Jahren
+              in der Fitnessbranche tätig und teilt seither ihre Leidenschaft in
+              Group Fitnesskursen und im Personaltraining (
               <a
                 className="italic hover:underline"
                 href="https://www.michaela-suessbauer.de"
@@ -31,13 +30,33 @@ function AboutUs() {
               >
                 www.fitnessraum.de
               </a>
-              ). Zudem ist sie Referentin und Ausbilderin für die IFAA.
+              ). Zudem ist sie Referentin und Ausbilderin für die IFAA. Sie ist
+              als Top-Expertin für ROBINSON Clubs unterwegs und organisiert auch
+              Ihre eigene Events und Camps für Fitness/Yoga in Verbindung mit
+              Kitesurfen oder Wandern und Klettern. Ihr Ziel ist es, Menschen zu
+              motivieren, Sportarten, Aktivitäten oder Kurse auszuprobieren, die
+              sie sich vielleicht nie zugetraut hätten. Mit Michi an Deiner
+              Seite kannst Du sicher sein, dass Sie dich motiviert die
+              Mundwinkel nach oben zu ziehen und Du eine tolle Zeit haben wirst
             </p>
             <p>
-              <span className="font-bold"> Oli</span> ist über 10 Jahre im
-              Fitness Bereich tätig, absolvierte zahlreiche Ausbildungen (z.B.
-              HOT IRON®, Indoor Cycling, DEEPWORK, 365, Animal Flow, Step &
-              Aerobic) und bildet regelmäßig für IFHIAS aus.
+              <span className="font-bold"> Oli</span> hat einen Masterabschluss
+              in Wirtschaftsinformatik von Universtitä zu Kölnt und
+              Bachelorabschluss in Sportmanagement von der Deutschen
+              Sporthochschule. Er ist über 10 Jahre im Fitness Bereich tätig,
+              absolvierte zahlreiche Ausbildungen (z.B. HOT IRON®, Indoor
+              Cycling, DEEPWORK, 365, Animal Flow, Step & Aerobic) und bildet
+              regelmäßig für IFHIAS (
+              <a
+                className="italic hover:underline"
+                href="https://experts-united.world/de/institut/referenten/oliver-goetz.html"
+                target="_blank"
+                rel="noreferrer"
+              >
+                www.experts-united.world
+              </a>
+              ) aus. Seit Jahren ist er als Top-Experte für ROBINSON Clubs
+              unterwegs und bildet auch Mitarbeiter vor Ort aus.
             </p>
             <p>
               <span className="font-bold">Michi & Oli</span> lernten sich 2018

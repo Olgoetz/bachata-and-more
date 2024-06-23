@@ -6,9 +6,12 @@ import { Chivo } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollToTopButton from "@/components/scroll-to-top-button";
+import { PRODUCTION_DOMAIN } from "@/lib/constants";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(`https://${PRODUCTION_DOMAIN}`),
   title: "Bachata and More",
-  description: "Eventkonzept für Bachata, Body & Mind and Workout",
+  description: "Eventkonzept für Bachata, Dance, Body & Mind and Workout",
 };
 
 const chivo = Chivo({ subsets: ["latin"] });
