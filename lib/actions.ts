@@ -37,7 +37,7 @@ export async function sendEmail(prevState: any, formData: FormData) {
   try {
     const { data, error } = await resend.emails.send({
       from: "Bachata & More <no-reply@dev.goetz-oliver.de>",
-      to: "dev.goetzoliver89@gmail.com",
+      to: "info@bachata-and-more.de",
       subject: "Neue Nachricht von Bachata & More",
       react: ContactFormEmail({
         ...zodResult.data,
