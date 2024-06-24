@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import hero from "../public/OliyMichi_hero.jpg";
 import heroMobile from "../public/OliyMichi_hero_mobile.jpg";
+import BackgroundVideo from "./BackgroundVideo";
 const Hero = () => {
   return (
     <div className="">
@@ -19,7 +20,8 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <div className="relative min-h-screen overflow-hidden">
+      <BackgroundVideo />
+      {/* <div className="relative min-h-screen overflow-hidden">
         <Image
           src={hero}
           alt="Bachata and More - Background Image"
@@ -39,7 +41,7 @@ const Hero = () => {
           sizes="80vw"
           className="object-cover block md:hidden"
         />
-      </div>
+      </div> */}
     </div>
   );
 };
