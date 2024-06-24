@@ -24,6 +24,7 @@ function Contact() {
         if (formState.success) {
           formRef.current.reset();
         }
+
         setIsMathCorrect(false);
         setShowToast(false);
       };
@@ -40,15 +41,15 @@ function Contact() {
     num2: 0,
     answer: 0,
   });
+
   useEffect(() => {
     // Generate a simple math question
     const num1 = Math.floor(Math.random() * 10) + 1;
     const num2 = Math.floor(Math.random() * 10) + 1;
     setMathQuestion({ num1, num2, answer: num1 + num2 });
-  }, []);
+  }, [formState]);
   const handleMathAnswerChange = () => {
     const userAnswer = parseInt(mathAnswerRef?.current?.value ?? "0", 10);
-    console.log(userAnswer);
     setIsMathCorrect(userAnswer === mathQuestion.answer);
   };
 
