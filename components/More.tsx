@@ -60,9 +60,14 @@ const courseDetailsDance = [
       "In diesem Kurs verbinden sich die klassischen Schritte des Aerobic mit verschiedenen Tanzstilen, wie Jazz, House und Hip-Hop und verschmelzen so zu einer genial fließenden Choreographie, die dank ihres durchdachten Aufbaus für jeden leicht zu erlernen ist.",
   },
   {
-    label: "Motto Dance",
+    label: "Motto Dance Partys",
     description: `Motto Dance Partys - 80er, 90er, Latin - egal welche Musik diese Stunde begleitet, hier steht der Spaß im Vordergrund!
 Einfache Schrittkombinationen und verschiedene Level sorgen dafür, dass vom Anfänger bis zum Fortgeschrittenen jeder Freude am Tanzen hat. Mundwinkel nach oben und let’s shake it!`,
+  },
+  {
+    label: "Step For Fun",
+    description: `Step for Fun – Dein spaßigen Einstieg in die Welt des Step Aerobics! Dieser Kurs ist speziell für Anfänger und alle, die sich fit halten möchten, ohne komplizierte Choreographien zu lernen. 
+    Hier dreht sich alles um Bewegung, Spaß und ein gutes Körpergefühl.`,
   },
 ];
 const courseDetailsBM = [
