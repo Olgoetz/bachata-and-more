@@ -10,7 +10,7 @@ const bachataOffer = [
   {
     image: bachata2,
     label: "Kurs",
-    content: `Möchtest Du die Leidenschaft und das Feuer des Bachata tanzen lernen? Dann bist Du bei uns genau richtig! In unserem Kurs tauchst Du ein in die Welt des Bachata und lernst erstmal die grundlegenden Schritte und Techniken dieses sinnlichen Tanzes. Wir beginnen mit den Basics – Schrittfolgen, Rhythmusgefühl und einfache Figuren. Ergänze Deine Schritte mit stilvollen Bewegungen und Techniken, um Deinen Tanz einzigartig zu machen. Egal, ob Du Anfänger bist oder schon Vorkenntnisse hast, unser Kurs bietet für jedes Niveau passende Herausforderungen. 
+    content: `Möchtest Du die Leidenschaft und das Feuer des Bachata tanzen lernen? Dann bist Du bei uns genau richtig! In unserem Kurs tauchst Du ein in die Welt dieses wunderbaren und sinnlichen Tanzes und lernst erstmal die grundlegenden Schritte und Techniken dafür. Wir beginnen mit den Basics – Schrittfolgen, Rhythmusgefühl und einfache Figuren. Ergänze Deine Schritte mit stilvollen Bewegungen und Techniken, um Deinen Tanz einzigartig zu machen. Egal, ob Du Anfänger bist oder schon Vorkenntnisse hast, unser Kurs bietet für jedes Niveau passende Herausforderungen. 
     Du brauchst keinen festen Tanzpartner mitzubringen – wir wechseln regelmäßig die Partner, damit Du verschiedene Tanzstile und Techniken kennenlernst. Tanzen macht am meisten Spaß in einer freundlichen und unterstützenden Umgebung. 
     
     Bei uns findest Du beides!`,
@@ -48,12 +48,13 @@ function Bachata() {
             <p>
               Wir möchten unsere große Leidenschaft unbedingt an euch
               weitergeben und zeigen wieviel Spaß und Freude dieser Tanz bringt.
-              Erlebe die Faszination der Bachata mit uns. Egal, ob Du Anfänger
-              bist oder bereits erste Schritte kennst, unser Kurs bietet Dir die
-              perfekte Gelegenheit, Deine Tanzfähigkeiten zu verbessern und vor
-              allem Spaß in einer komplett ungezwungenen Atmosphäre zu haben.
-              Komm vorbei und lass Dich von der Musik und den Bewegungen
-              mitreißen. Wir freuen uns darauf, gemeinsam mit Dir zu tanzen!
+              Lass Dich von uns zum Bachata Fieber anstecken. Egal, ob Du
+              Anfänger bist oder bereits erste Schritte kennst, unser Kurs
+              bietet Dir die perfekte Gelegenheit, Deine Tanzfähigkeiten zu
+              verbessern und vor allem Spaß in einer komplett ungezwungenen
+              Atmosphäre zu haben. Komm vorbei und lass Dich von der Musik und
+              den Bewegungen mitreißen. Wir freuen uns darauf, gemeinsam mit Dir
+              zu tanzen!
             </p>
           </div>
           <div className="hidden md:block relative h-full">

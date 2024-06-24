@@ -31,17 +31,18 @@ function AboutUs() {
                 www.fitnessraum.de
               </a>
               ). Zudem ist sie Referentin und Ausbilderin für die IFAA. Sie ist
-              als Top-Expertin für ROBINSON Clubs unterwegs und organisiert auch
-              Ihre eigene Events und Camps für Fitness/Yoga in Verbindung mit
-              Kitesurfen oder Wandern und Klettern. Ihr Ziel ist es, Menschen zu
-              motivieren, Sportarten, Aktivitäten oder Kurse auszuprobieren, die
-              sie sich vielleicht nie zugetraut hätten. Mit Michi an Deiner
-              Seite kannst Du sicher sein, dass Sie dich motiviert die
-              Mundwinkel nach oben zu ziehen und Du eine tolle Zeit haben wirst
+              seit vielen Jahren als Top-Expertin für ROBINSON Clubs unterwegs
+              und organisiert auch Ihre eigene Events und Camps für Fitness/Yoga
+              in Verbindung mit Kitesurfen oder Wandern und Klettern. Ihr Ziel
+              ist es, Menschen zu motivieren, Sportarten, Aktivitäten oder Kurse
+              auszuprobieren, die sie sich vielleicht nie zugetraut hätten. Mit
+              Michi an Deiner Seite kannst Du sicher sein, dass Sie dich
+              motiviert die Mundwinkel nach oben zu ziehen und Du eine tolle
+              Zeit haben wirst.
             </p>
             <p>
               <span className="font-bold"> Oli</span> hat einen Masterabschluss
-              in Wirtschaftsinformatik von Universtitä zu Kölnt und
+              in Wirtschaftsinformatik von Universtitä zu Köln und
               Bachelorabschluss in Sportmanagement von der Deutschen
               Sporthochschule. Er ist über 10 Jahre im Fitness Bereich tätig,
               absolvierte zahlreiche Ausbildungen (z.B. HOT IRON®, Indoor
