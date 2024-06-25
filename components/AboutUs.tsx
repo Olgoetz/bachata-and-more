@@ -42,7 +42,7 @@ function AboutUs() {
             </p>
             <p>
               <span className="font-bold"> Oli</span> hat einen Masterabschluss
-              in Wirtschaftsinformatik von Universtitä zu Köln und
+              in Wirtschaftsinformatik von der Universtität zu Köln und
               Bachelorabschluss in Sportmanagement von der Deutschen
               Sporthochschule. Er ist über 10 Jahre im Fitness Bereich tätig,
               absolvierte zahlreiche Ausbildungen (z.B. HOT IRON®, Indoor
