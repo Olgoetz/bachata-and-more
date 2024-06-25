@@ -1,10 +1,11 @@
 "use client";
-import React, { ChangeEvent, useState } from "react";
+import React, { ChangeEvent, useEffect, useState } from "react";
 import { navLinks } from "./navbar-links";
 import Link from "next/link";
 import Image from "next/image";
 
 import logo from "@/public/logo.png";
+import clsx from "clsx";
 function Navbar() {
   const [isDrawerOpen, setIsDrawerOpen] = useState<boolean>(false);
 
@@ -15,6 +16,35 @@ function Navbar() {
   const closeDrawer = () => {
     setIsDrawerOpen(false);
   };
+
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const controlNavbar = () => {
+    // Check if the window object is available
+    if (typeof window !== "undefined") {
+      if (window.scrollY > lastScrollY) {
+        // Scrolling down
+        setShowNavbar(false);
+      } else {
+        // Scrolling up
+        setShowNavbar(true);
+      }
+      setLastScrollY(window.scrollY);
+    }
+  };
+
+  useEffect(() => {
+    // Add event listener only if the window object is available
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", controlNavbar);
+
+      // Cleanup function to remove the event listener
+      return () => {
+        window.removeEventListener("scroll", controlNavbar);
+      };
+    }
+  }, [lastScrollY]);
 
   return (
     <div className="drawer z-50">
@@ -27,7 +57,12 @@ function Navbar() {
       />
       <div className="drawer-content flex flex-col">
         {/* Navbar */}
-        <div className="w-full navbar bg-white">
+        <div
+          className={clsx(
+            "fixed navbar bg-white w-full transition-transform duration-300",
+            showNavbar ? "translate-y-0" : "-translate-y-full"
+          )}
+        >
           <div className="flex-none lg:hidden">
             <label
               htmlFor="navbar"
@@ -71,12 +106,37 @@ function Navbar() {
         </div>
       </div>
       <div className="drawer-side">
-        <label
-          htmlFor="navbar"
-          aria-label="close sidebar"
-          className="drawer-overlay"
-        ></label>
         <ul className="menu p-4 w-80 min-h-full bg-white">
+          <div>
+            <label
+              htmlFor="navbar"
+              aria-label="close sidebar"
+              className="btn btn-square btn-ghost float-right"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 6L18 18"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M6 18L18 6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </label>
+          </div>
           {/* Sidebar content here */}
           {navLinks.map((link) => (
             <li key={link.label}>
