@@ -16,7 +16,7 @@ resource "vercel_project" "this" {
   git_repository = {
     type              = "github"
     repo              = "Olgoetz/bachata-and-more"
-    production_branch = "main"
+    production_branch = "prod"
   }
 
   vercel_authentication = {
