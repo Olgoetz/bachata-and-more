@@ -2,8 +2,8 @@
 //import DownloadConceptButton from "./ui/DownloadConceptButton";
 import Image from "next/image";
 import Link from "next/link";
-import hero from "../public/OliyMichi_hero.jpg";
-import heroMobile from "../public/OliyMichi_hero_mobile.jpg";
+// import hero from "../public/OliyMichi_hero.jpg";
+// import heroMobile from "../public/OliyMichi_hero_mobile.jpg";
 import BackgroundVideo from "./BackgroundVideo";
 const Hero = () => {
   return (

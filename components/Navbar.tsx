@@ -59,7 +59,7 @@ function Navbar() {
         {/* Navbar */}
         <div
           className={clsx(
-            "fixed navbar h-12 bg-white w-full transition-transform duration-300",
+            "fixed navbar  bg-white w-full transition-transform duration-300",
             showNavbar ? "translate-y-0" : "-translate-y-full"
           )}
         >
@@ -123,16 +123,16 @@ function Navbar() {
                 <path
                   d="M6 6L18 18"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M6 18L18 6"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </label>
