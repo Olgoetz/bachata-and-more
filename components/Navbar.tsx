@@ -59,7 +59,7 @@ function Navbar() {
         {/* Navbar */}
         <div
           className={clsx(
-            "fixed navbar bg-white w-full transition-transform duration-300",
+            "fixed navbar h-12 bg-white w-full transition-transform duration-300",
             showNavbar ? "translate-y-0" : "-translate-y-full"
           )}
         >
@@ -86,7 +86,7 @@ function Navbar() {
           </div>
           <div className="flex-1 justify-end md:justify-start px-2 mx-2">
             <Link href="/">
-              <Image src={logo} alt="Bachata & More" width={80} height={80} />
+              <Image src={logo} alt="Bachata & More" width={60} height={60} />
             </Link>
           </div>
           <div className="flex-none hidden lg:block">
