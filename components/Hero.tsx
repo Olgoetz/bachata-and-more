@@ -8,10 +8,11 @@ import BackgroundVideo from "./BackgroundVideo";
 const Hero = () => {
   return (
     <div className="">
-      <div className="absolute pt-24 md:pt-56 md:pl-12 z-10 text-center">
+      <div className="absolute w-full md:w-1/2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  z-10 text-center">
         <div className="bg-white/40 p-4 rounded-lg flex flex-col items-center justify-center gap-y-4">
-          <h1 className="text-5xl font-bold">
-            Willkommen zu <span className="text-bm-main">Bachata & More</span>
+          <h1 className="text-5xl font-bold leading-normal">
+            Willkommen zu <br />
+            <span className="text-bm-main">Bachata & More</span>
           </h1>
           <p className="text-3xl">Das Eventkonzept mit Bachata und Fitness</p>
 
