@@ -5,6 +5,7 @@ import bachata from "../public/OliyMichi_bachata.webp";
 import bachata2 from "../public/OliyMichi_bachata2.jpg";
 import bachata3 from "../public/OliyMichi_bachata3.jpg";
 import bachata4 from "../public/OliyMichi_bachata4.jpg";
+import Community from "./Community";
 
 const bachataOffer = [
   {
@@ -37,6 +38,7 @@ function Bachata() {
         <h2 className="text-5xl text-bm-main font-bold">Bachata</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-10">
           <div className="leading-10">
+            <Community />
             <p className="">
               Nichts ist derzeit mehr im Trend als Bachata. Bachata stammt
               ursprünglich aus der Dominikanischen Republik und hat mittlerweile

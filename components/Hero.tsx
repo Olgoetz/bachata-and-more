@@ -5,6 +5,7 @@ import Link from "next/link";
 // import hero from "../public/OliyMichi_hero.jpg";
 // import heroMobile from "../public/OliyMichi_hero_mobile.jpg";
 import BackgroundVideo from "./BackgroundVideo";
+import Community from "./Community";
 const Hero = () => {
   return (
     <div className="">
@@ -19,6 +20,8 @@ const Hero = () => {
           <Link href="#kontakt">
             <button className="btn btn-wide">Jetzt anfragen</button>
           </Link>
+
+          {/* <Community /> */}
         </div>
       </div>
       <BackgroundVideo />
