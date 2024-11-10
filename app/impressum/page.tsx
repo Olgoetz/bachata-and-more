@@ -8,12 +8,7 @@ const Impressum = () => {
         <div className="mt-4 text-sm text-justify">
           <p className="font-bold">Angaben gemäß § 5 TMG</p>
           <br />
-          <p>Michaela Süßbauer</p>
-          <p>Gabelsbergerstr. 54A, D-80333 München</p>
-          <p>Tel. 0151 / 23 00 50 78</p>
-          <p>info@bachata-and-more.de</p>
-          <br />
-          <p>Oliver Götz</p>
+          <p>Götz und Süßbauer GbR</p>
           <p>Luxemburger Str. 192, D-50937 Köln</p>
           <p>Tel. 0176 / 31 73 77 82</p>
           <p>info@bachata-and-more.de</p>
