@@ -13,6 +13,22 @@ type Event = {
 };
 
 const Events = () => {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  const upcomingEvents = events.filter((event: Event) => {
+    // Extract end date (after '-')
+    const dateRange = event.date.split("-");
+    const endDateStr = dateRange[1] ? dateRange[1].trim() : dateRange[0].trim();
+
+    // If endDateStr is like "29.03.2025", parse it as DD.MM.YYYY
+    const [day, month, year] = endDateStr.split(".");
+    const endDate = new Date(Number(year), Number(month) - 1, Number(day));
+    endDate.setHours(0, 0, 0, 0);
+
+    // Only include events that end today or in the future
+    return endDate >= today;
+  });
   return (
     <div id="events" className="py-16 bg-white">
       <div className="container px-4 mx-auto">
@@ -22,7 +38,7 @@ const Events = () => {
 
         <div className="text-justify mx-auto max-w-[800px] py-10">
           <ul>
-            {events.map((event: Event) => (
+            {upcomingEvents.map((event: Event) => (
               <EventItem
                 key={event.id}
                 title={event.title}
