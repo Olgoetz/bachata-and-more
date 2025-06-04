@@ -42,12 +42,23 @@ function Contact() {
     answer: 0,
   });
 
+  // On first render, generate a math question
   useEffect(() => {
-    // Generate a simple math question
     const num1 = Math.floor(Math.random() * 10) + 1;
     const num2 = Math.floor(Math.random() * 10) + 1;
     setMathQuestion({ num1, num2, answer: num1 + num2 });
-  }, [formState]);
+  }, []);
+
+  // Only regenerate after successful submission
+  useEffect(() => {
+    if (formState.success) {
+      const num1 = Math.floor(Math.random() * 10) + 1;
+      const num2 = Math.floor(Math.random() * 10) + 1;
+      setMathQuestion({ num1, num2, answer: num1 + num2 });
+      setIsMathCorrect(false);
+      if (mathAnswerRef.current) mathAnswerRef.current.value = "";
+    }
+  }, [formState.success]);
   const handleMathAnswerChange = () => {
     const userAnswer = parseInt(mathAnswerRef?.current?.value ?? "0", 10);
     setIsMathCorrect(userAnswer === mathQuestion.answer);
@@ -166,6 +177,7 @@ export default Contact;
 
 const SubmitButton = ({ spamProtection }: { spamProtection: boolean }) => {
   const status = useFormStatus();
+  console.log(spamProtection, status.pending);
   return (
     <button
       type="submit"
