@@ -3,6 +3,8 @@
 import { Resend } from "resend";
 import { z } from "zod";
 import ContactFormEmail from "@/emails/contact";
+import { List } from "postcss/lib/list";
+import { BLOCKED_EMAILS } from "./constants";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -35,6 +37,18 @@ export async function sendEmail(prevState: any, formData: FormData) {
   //   };
 
   try {
+    // Check if the email is in a list of blocked emails
+    const blockedEmails: string[] = BLOCKED_EMAILS?.split(",") || [];
+    if (blockedEmails.includes(zodResult.data.email)) {
+      console.warn(
+        `Email ${zodResult.data.email} is blocked. Not sending email.`
+      );
+      return {
+        success: true,
+        message: "Nachricht verschickt!",
+      };
+    }
+
     const { data, error } = await resend.emails.send({
       from: "Bachata & More <no-reply@dev.goetz-oliver.de>",
       to: "info@bachata-and-more.de",
