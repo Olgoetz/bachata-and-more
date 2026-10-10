@@ -67,13 +67,13 @@ function Navbar() {
             <label
               htmlFor="navbar"
               aria-label="open sidebar"
-              className="btn btn-square btn-ghost"
+              className="btn btn-square btn-ghost border-none shadow-none outline-none focus:outline-none hover:bg-transparent active:!bg-transparent"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                className="inline-block w-6 h-6 stroke-current"
+                className="inline-block w-6 h-6 stroke-black"
               >
                 <path
                   strokeLinecap="round"
@@ -111,7 +111,7 @@ function Navbar() {
             <label
               htmlFor="navbar"
               aria-label="close sidebar"
-              className="btn btn-square btn-ghost float-right"
+              className="btn btn-square btn-ghost float-right text-black border-none shadow-none outline-none focus:outline-none hover:bg-transparent active:!bg-transparent"
             >
               <svg
                 width="24"
