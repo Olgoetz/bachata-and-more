@@ -86,7 +86,7 @@ export default function SpreadShop() {
       <div id={BASE_ID} ref={containerRef} className="min-h-[60vh]">
         <div className="flex flex-col items-center justify-center gap-4 min-h-[60vh]">
           <span className="loading loading-spinner loading-lg text-bm-main" />
-          <span className="text-base-content/70">Shop wird geladen ...</span>
+          <span className="text-black">Shop wird geladen ...</span>
         </div>
       </div>
     </>

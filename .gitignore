@@ -6,6 +6,9 @@
 .pnp.js
 .yarn/install-state.gz
 
+# use yarn, not npm
+package-lock.json
+
 # testing
 /coverage
 

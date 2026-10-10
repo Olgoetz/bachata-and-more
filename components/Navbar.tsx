@@ -5,9 +5,24 @@ import Link from "next/link";
 import Image from "next/image";
 
 import logo from "@/public/logo.png";
+import { SPREADSHOP_URL } from "@/lib/constants";
 import clsx from "clsx";
 function Navbar() {
   const [isDrawerOpen, setIsDrawerOpen] = useState<boolean>(false);
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+
+  // On mobile the embedded shop doesn't render reliably (iOS Safari blocks the
+  // cross-site requests the product grid needs), so send mobile users straight
+  // to the hosted SpreadShop site instead of the internal /shop page.
+  useEffect(() => {
+    const mql = window.matchMedia("(max-width: 1023px)");
+    const update = () => setIsMobile(mql.matches);
+    update();
+    mql.addEventListener("change", update);
+    return () => mql.removeEventListener("change", update);
+  }, []);
+
+  const isShopLink = (path: string) => path === "/shop";
 
   const handleCheckboxChange = (event: ChangeEvent<HTMLInputElement>) => {
     setIsDrawerOpen(event.target.checked);
@@ -92,15 +107,27 @@ function Navbar() {
           <div className="flex-none hidden lg:block">
             <ul className="menu menu-horizontal">
               {/* Navbar menu content here */}
-              {navLinks.map((link) => (
-                <Link
-                  href={link.path}
-                  key={link.label}
-                  className="rounded-md text-lg p-3 bg-none hover:bg-bm-main hover:text-white "
-                >
-                  {link.label}
-                </Link>
-              ))}
+              {navLinks.map((link) =>
+                isShopLink(link.path) && isMobile ? (
+                  <a
+                    href={SPREADSHOP_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    key={link.label}
+                    className="rounded-md text-lg p-3 bg-none hover:bg-bm-main hover:text-white "
+                  >
+                    {link.label}
+                  </a>
+                ) : (
+                  <Link
+                    href={link.path}
+                    key={link.label}
+                    className="rounded-md text-lg p-3 bg-none hover:bg-bm-main hover:text-white "
+                  >
+                    {link.label}
+                  </Link>
+                ),
+              )}
             </ul>
           </div>
         </div>
@@ -140,13 +167,25 @@ function Navbar() {
           {/* Sidebar content here */}
           {navLinks.map((link) => (
             <li key={link.label}>
-              <Link
-                href={link.path}
-                onClick={closeDrawer}
-                className="rounded-md text-lg p-3  hover:bg-bm-main hover:text-white "
-              >
-                {link.label}
-              </Link>
+              {isShopLink(link.path) && isMobile ? (
+                <a
+                  href={SPREADSHOP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={closeDrawer}
+                  className="rounded-md text-lg p-3  hover:bg-bm-main hover:text-white "
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <Link
+                  href={link.path}
+                  onClick={closeDrawer}
+                  className="rounded-md text-lg p-3  hover:bg-bm-main hover:text-white "
+                >
+                  {link.label}
+                </Link>
+              )}
             </li>
           ))}
         </ul>
