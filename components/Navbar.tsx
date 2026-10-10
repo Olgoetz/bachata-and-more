@@ -60,7 +60,7 @@ function Navbar() {
         <div
           className={clsx(
             "fixed navbar  bg-white w-full transition-transform duration-300",
-            showNavbar ? "translate-y-0" : "-translate-y-full"
+            showNavbar ? "translate-y-0" : "-translate-y-full",
           )}
         >
           <div className="flex-none lg:hidden">

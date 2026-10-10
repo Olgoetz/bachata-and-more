@@ -8,7 +8,7 @@
     "title": "Bachata & More goes Deep Red Week",
     "venue": "ROBINSON Soma Bay"
   },
-   {
+  {
     "address": "Çamyuva No:2 Turizm Blv., 07980 Kemer/Antalya (Türkei)",
     "bookingLink": "https://www.robinson.com/de/de/cluburlaub/tuerkei/camyuva/club-details/",
     "date": "28.06 - 05.07.2026",
@@ -17,7 +17,7 @@
     "title": "Bachata & More",
     "venue": "ROBINSON Camyuva"
   },
-   {
+  {
     "address": "Çamyuva No:2 Turizm Blv., 07980 Kemer/Antalya (Türkei)",
     "bookingLink": "https://www.robinson.com/de/de/cluburlaub/tuerkei/camyuva/club-details/",
     "date": "01.08 - 08.08.2026",
@@ -43,5 +43,24 @@
     "image": "https://www.robinson.com/media/_processed_/0/6/csm_cp47_13979_Aerial_WOL__1__1e45ef3c7f.jpg",
     "title": "Bachata & More",
     "venue": "ROBINSON Cyprus"
+  },
+
+  {
+    "address": "Soma Bay km 48 Safaga Road P.O. Box 149, 84651 Hurghada (Ägypten)",
+    "bookingLink": "https://www.robinson.com/de/de/cluburlaub/aegypten/soma-bay/detailseite/",
+    "date": "12.06 - 19.06.2027",
+    "id": "4",
+    "image": "https://www.robinson.com/media/_processed_/c/5/csm_sm96__7320_5c03d9b8f6.jpg",
+    "title": "Bachata & More goes Deep Red Week",
+    "venue": "ROBINSON Soma Bay"
+  },
+  {
+    "address": "Çamyuva No:2 Turizm Blv., 07980 Kemer/Antalya (Türkei)",
+    "bookingLink": "https://www.robinson.com/de/de/cluburlaub/tuerkei/camyuva/club-details/",
+    "date": "30.07 - 06.08.2027",
+    "id": "3",
+    "image": "https://www.robinson.com/media/_processed_/8/c/csm_cv41_13780_Hauptpool_ecc946438c.jpg",
+    "title": "Bachata & More",
+    "venue": "ROBINSON Camyuva"
   }
 ]

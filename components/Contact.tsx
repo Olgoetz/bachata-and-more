@@ -1,6 +1,6 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
-import { useFormStatus, useFormState } from "react-dom";
+import React, { useActionState, useEffect, useRef, useState } from "react";
+import { useFormStatus } from "react-dom";
 import Image from "next/image";
 
 import { sendEmail } from "@/lib/actions";
@@ -8,12 +8,12 @@ import { sendEmail } from "@/lib/actions";
 import contact from "../public/OliyMichi_contact.webp";
 import clsx from "clsx";
 function Contact() {
-  const [formState, formAction] = useFormState(sendEmail, {
+  const [formState, formAction] = useActionState(sendEmail, {
     success: false,
     message: "",
   });
 
-  const formRef = useRef<any>();
+  const formRef = useRef<any>(null);
   const [showToast, setShowToast] = useState<boolean>(false);
 
   useEffect(() => {
@@ -78,6 +78,7 @@ function Contact() {
               className="rounded-lg object-cover"
               src={contact}
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               alt="Bachata Sensual - Oliver und Michaela"
             />
           </div>
@@ -160,7 +161,7 @@ function Contact() {
               <div
                 className={clsx(
                   "alert",
-                  formState.success ? "alert-success" : "alert-error"
+                  formState.success ? "alert-success" : "alert-error",
                 )}
               >
                 <span>{formState.message}</span>

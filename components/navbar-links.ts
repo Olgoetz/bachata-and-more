@@ -24,6 +24,10 @@ export const navLinks: NavbarItem[] = [
   //   path: "/#stimmen",
   // },
   {
+    label: "Shop",
+    path: "/shop",
+  },
+  {
     label: "Kontakt",
     path: "/#kontakt",
   },
